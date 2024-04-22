@@ -7,7 +7,6 @@ import { AdminPannelService } from './admin-pannel/admin-pannel.service';
 import { formValidation } from './helper/form-validation';
 import { ToastrModule } from 'ngx-toastr';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { LayoutModule } from './layout/layout.module';
 // import { NotFoundComponent } from './not-found/not-found.component';
 
 @NgModule({
@@ -19,7 +18,6 @@ import { LayoutModule } from './layout/layout.module';
     BrowserModule,
     BrowserAnimationsModule,
     AppRouting,
-    LayoutModule,
     ToastrModule.forRoot({
       timeOut: 2500,
       positionClass: 'toast-top-right',

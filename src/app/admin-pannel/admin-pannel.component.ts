@@ -35,8 +35,8 @@ import { ToastrService } from 'ngx-toastr';
         }
     
         .home.close {
-            left: 60px !important;
-            width: calc(100% - 78px) !important;
+            left: 0 !important;
+            width: 100% !important;
         }
     }
   `]

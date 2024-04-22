@@ -4,20 +4,16 @@ import * as AOS from 'aos';
 
 @Component({
   selector: 'app-root',
-  template: `
-  <app-header></app-header>
-  <router-outlet></router-outlet>
-  <app-footer></app-footer>
-  `,
+  template: `<router-outlet></router-outlet> `,
 })
 export class AppComponent implements OnInit {
   ngOnInit(): void {
-    AOS.init({
-      offset: 200,
-      duration: 700,
-      easing: 'ease-in-sine',
-      delay: 100,
-    });
+    // AOS.init({
+    //   offset: 200,
+    //   duration: 700,
+    //   easing: 'ease-in-sine',
+    //   delay: 100,
+    // });
   }
   title = 'AdminPannel';
 

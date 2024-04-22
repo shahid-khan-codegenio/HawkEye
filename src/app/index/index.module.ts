@@ -1,15 +1,14 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { IndexComponent } from './index.component';
-import { RouterModule, Routes } from '@angular/router';
+import { LayoutModule } from './layout/layout.module';
+import { IndexRouting } from './index.routing';
 
-const routes: Routes = [
-  {path: '', component: IndexComponent}
-]
 @NgModule({
   imports: [
     CommonModule,
-    RouterModule.forChild(routes)
+    IndexRouting,
+    LayoutModule
   ],
   declarations: [IndexComponent]
 })
