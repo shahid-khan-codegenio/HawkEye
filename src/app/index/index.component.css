@@ -1,64 +1,440 @@
-.header {
-    background-color: #f1f1f1;
+
+/* Hero section */
+.hero {
+    min-height: 100vh;
+    position: relative;
 }
 
-.header nav {
-    position: absolute;
+.hero video {
     width: 100%;
+    height: 100vh !important;
+    object-fit: cover;
 }
 
-.header nav .navbar-toggler {
-    background-color: #000;
-    border: none;
-    outline: none;
-    display: inline-block;
-    margin-left: auto;
-    margin-right: 15px;
+.hero .content {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 25vh;
 }
 
-#navbarSupportedContent {
-    top: 5px;
-    float: right;
+.hero .text .title {
+    font-size: 4rem;
+    font-weight: 900;
     color: #fff;
 }
 
-#navbarSupportedContent img{
-    cursor: pointer;
-} 
-
-#navbarSupportedContent .active ,
-#navbarSupportedContent .nav-item:hover {
-    border-bottom: 1px solid #fff;
-    cursor: pointer;
+.hero .text .phone-number {
+    background-color: red;
+    display: inline-block;
+    color: #fff;
 }
 
-.header ul {
-    line-height: 15px;
-    list-style: none;
-    margin: 0;
-    padding: 0;
+.form {
+    background-color: #fff;
+    padding: 40px 30px;
+    width: 500px;
+}
+
+.btn.btn-danger {
+    border-color: #ff1414;
+    background-color: #ff1414;
+    color: #fff;
+    border-radius: 0%;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+
+
+
+
+
+/* Service section */
+.services {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    position: relative;
+}
+
+
+
+.services h2:nth-child(1) {
+    font-weight: 800;
+    font-size: 3rem;
+}
+
+.services h2:nth-child(2) {
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.services .service-container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 3rem;
+}
+
+.services .service-container .service-card {
+    margin-bottom: 20px;
+    background-color: #000;
+    width: 97%;
+    display: flex;
+    min-height: 200px;
+    justify-content: space-between;
+    color: #fff;
+    padding: 20px;
+    position: relative;
+}
+
+.service-card .service-count {
+    font-weight: 800;
+    font-size: 3rem;
+}
+
+.service-card .text {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.service-card .plus,
+.service-card .plus1 {
+    font-size: 3rem;
+    color: red;
+    font-weight: 900;
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    right: 20px;
+    transform: translate(0, -50%);
+}
+
+.service-card .plus1 {
+    display: none;
+}
+
+.service-card .wrapper {
+    position: relative;
+    z-index: 2;
+}
+
+.service-card img {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover
+}
+
+.service-card:hover img {
+    transition: opacity 1s ease;
+    opacity: 1;
+    z-index: 1;
+    transition: 1s;
+}
+
+.service-card:hover .plus {
+    display: none;
+}
+
+.service-card:hover .plus1 {
+    background-color: red;
+    color: #fff;
+    height: 100%;
+    width: 100px;
+    right: 0;
     display: flex;
     justify-content: center;
-    width: 100%;
-    z-index: 100;
+    align-items: center;
+    font-size: 18px;
+    font-family: 100;
+
 }
 
-.header ul li {
-    list-style: none;
-    margin-right: 20px;
+
+
+
+
+
+
+/* Count section */
+.count-section {
+    background-image: url(/assets/count_bg.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    margin-bottom: 3rem;
+    position: relative;
+
+}
+
+.count-section h2 {
+    font-weight: 600;
+    font-size: 3rem;
+    margin-bottom: 5rem;
     color: #fff;
-    margin-top: auto;
-    margin-bottom: auto;
+}
+
+.count-section i {
+    color: green;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.count-section .count-num {
+    font-size: 3rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.count-section .count-num {
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+
+
+
+
+/* How to get Started section */
+.getStart-section {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    margin-bottom: 3rem;
+    position: relative;
 
 }
 
-.header ul li img {
-    width: 100px;
-    height: 65px;
+.getStart-section .content {
+    padding-right: 2rem;
 }
 
-.header ul li a {
-    display: inline-block;
-    text-decoration: none;
-    color: #fbfafa;
+.getStart-section h2 {
+    font-weight: 700;
+    font-size: 3rem;
+    margin-bottom: 5rem;
+    color: #000000;
+}
+
+.getStart-section .heading a {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 5rem;
+    color: red;
+}
+
+.getStart-section p {
+    font-weight: 400;
+    font-size: 15px;
+    font-family: Logity, sans-serif;
+}
+
+.getStart-section ul li {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.getStart-section ul li span:nth-child(1) {
+    width: 100%;
+    padding: 12px 0px 0px 12px;
+}
+
+.getStart-section ul li span:nth-child(2) {
+    color: red;
+    height: 100%;
+    width: 50px;
+    font-size: 2rem;
+    padding-left: 12px;
+}
+
+.getStart-section ul li:hover span:nth-child(1) {
+    background-color: #fff;
+}
+
+.getStart-section ul li:hover span:nth-child(2) {
+    background-color: red;
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+/* work-with-us section*/
+.work-with-us {
+    width: 100%;
+    background: #000;
+    padding: 4rem 0;
+}
+
+.work-with-us .title h1 {
+    color: #fff;
+    font-size: 50px;
+    font-weight: 800;
+    position: relative;
+}
+
+.work-with-us .title h1::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: -20px;
+    width: 70px;
+    height: 6px;
+    background: red;
+    transition: all 0.2s;
+}
+
+.work-with-us .title h1:hover::before {
+    background: blue;
+}
+
+.work-with-us .wrapper {
+    margin-top: 80px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+.work-with-us .wrapper .box {
+    width: 100%;
+    height: 230px;
+    background: #fff;
+    position: relative;
+}
+
+.work-with-us .wrapper .box img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.work-with-us .wrapper .box .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, rgba(0, 0, 0, .4), rgba(0, 0, 0, .4));
+    transition: opacity .3s;
+}
+
+.work-with-us .wrapper .box:hover .overlay {
+    opacity: 0;
+}
+
+.work-with-us .wrapper .box a {
+    position: absolute;
+    bottom: 15px;
+    left: -13px;
+    padding: 7px 50px 7px 40px;
+    background: transparent;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 700;
+    z-index: 4;
+    background: transparent;
+    display: flex;
+    transition: background 0.3s;
+}
+
+.work-with-us .wrapper .box a svg {
+    width: 15px;
+    height: 15px;
+    transition: opacity .3s;
+}
+
+.work-with-us .wrapper .box:hover a {
+    background: red;
+    color: #fff;
+}
+
+.work-with-us .wrapper .box:hover a svg {
+    opacity: 1;
+    color: #fff;
+}
+
+
+
+
+
+/* Testimonial section */
+.testimonials {
+    width: 100%;
+    padding: 4rem 0;
+    position: relative;
+}
+
+.testimonials .title h1 {
+    color: #222;
+    font-size: 50px;
+    font-weight: 800;
+}
+
+.testimonials .title h1::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: -20px;
+    width: 70px;
+    height: 6px;
+    background: red;
+    transition: all 0.2s;
+}
+
+.testimonials .title h1:hover::before {
+    background: blue;
+}
+
+.testimonials .wrapper {
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+}
+
+.testimonials .wrapper .img {
+    width: 434px;
+    height: 371px;
+}
+
+.testimonials .wrapper .img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.testimonials .wrapper .txt {
+    padding: 30px 50px;
+    flex: 1;
+    background: #000;
+}
+
+.testimonials .wrapper .txt h1 {
+    font-size: 3.6rem;
+    color: #fff;
+    margin-bottom: 1.5rem;
+}
+
+.testimonials .wrapper .txt h3 {
+    font-size: 15px;
+    color: #94a9cb;
+    font-weight: 500;
+    margin-bottom: 3rem;
+}
+
+.testimonials .wrapper .txt p {
+    font-size: 15px;
+    color: #fff;
 }
