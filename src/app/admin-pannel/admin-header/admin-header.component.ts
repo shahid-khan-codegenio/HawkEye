@@ -2,10 +2,10 @@ import { Component, HostListener, OnInit } from '@angular/core';
 
 @Component({
   selector: 'admin-app-header',
-  templateUrl: './header.component.html',
-  styleUrls: ['./header.component.scss']
+  templateUrl: './admin-header.component.html',
+  styleUrls: ['./admin-header.component.scss']
 })
-export class HeaderComponent implements OnInit {
+export class AdminHeaderComponent implements OnInit {
   darkMode = false;
   sidebar: any;
   home: any;

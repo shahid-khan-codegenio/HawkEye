@@ -1,0 +1,35 @@
+@import url('/src/assets/variables.scss');
+
+
+header {
+    padding: 1rem;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+
+    .toggle {
+        color: var(--primary-color-light);
+        font-size: 1.5rem;
+        cursor: pointer;
+        position: relative;
+        z-index: 10000;
+    }
+
+    .right-side {
+        display: inline-block;
+        
+        i{
+            color: #fff;
+            border: 1px solid #fff;
+            border-radius: 10px;
+            padding: 4px 6px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            margin-right: 10px;
+
+            &:hover{
+                background-color: #8c8c8c;
+                border: 1px solid #494949;
+            }
+        }
+    }
+}
