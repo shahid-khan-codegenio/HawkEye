@@ -18,7 +18,7 @@ import { ToastrService } from 'ngx-toastr';
   styles: [`
     .main {
         min-height: 100vh;
-        background-color: "#E4E9F7";
+        background-color: #E4E9F7;
     
         .home {
             position: relative;
