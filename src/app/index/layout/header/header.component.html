@@ -7,19 +7,19 @@
       
       <div class="collapse navbar-collapse" id="navbarSupportedContent" [ngClass]="{'show': navbarOpen}">
           <ul class="navbar-nav mr-auto" #notificationMenu>
-              <li  class="mr-1"><img src="./assets/logo.png" alt="logo"></li>
+              <li  class="mr-1"><a href=""><img src="./assets/logo.png" alt="logo"></a></li>
              
               <li class="nav-item mr-1">
                 <div class="dropdown">
-                    <h4 class="drop-text" (click)="this.navbarOpen=false;" href="/about">About <i class="fa fa-angle-down"></i></h4>
+                    <h4 class="drop-text"><a href="about">About</a><i class="fa fa-angle-down"></i></h4>
                     <div class="dropdown-content">
-                        <a (click)="this.navbarOpen=false" routerLink="careers">Careers</a>
+                        <a href="careers">Careers</a>
                         <hr style="margin: 0" />
-                        <a (click)="this.navbarOpen=false" routerLink="success-stories">Success Stories</a>
+                        <a href="success-stories">Success Stories</a>
                         <hr style="margin: 0" />
-                        <a (click)="this.navbarOpen=false" routerLink="testimonials">Testimonials</a>
+                        <a href="testimonials">Testimonials</a>
                         <hr style="margin: 0" />
-                        <a (click)="this.navbarOpen=false" routerLink="earn-reward">Earn Rewards with our Referal Program</a>
+                        <a href="earn-reward">Earn Rewards with our Referal Program</a>
                         <!-- <hr style="margin: 0" />
                         <a (click)="this.navbarOpen=false">Videos</a> -->
                     </div>
@@ -78,12 +78,12 @@
                 </div>
              </li>
 
-              <li class="nav-item mr-1" (click)="this.navbarOpen=false">How to start</li>
-              <li class="nav-item mr-1" (click)="this.navbarOpen=false">Shippers</li>
-              <li class="nav-item mr-1" (click)="this.navbarOpen=false">FAQ</li>
-              <li class="nav-item mr-1" (click)="this.navbarOpen=false">Contact us</li>
-              <li ><a href="tel:+1302123456" class="nav-item" (click)="this.navbarOpen=false">(406)-4058608</a></li>
-             
+              <li class="nav-item mr-1"><a href="how-to-start">How to start</a></li>
+              <li class="nav-item mr-1"><a href="shippers">Shippers</a></li>
+              <li class="nav-item mr-1"><a href="FAQ">FAQ</a></li>
+              <li class="nav-item mr-1"><a href="contact-us">Contact us</a></li>
+              <li class="nav-item mr-1"><a href="tel:+1302123456" class="nav-item" >(406)-4058608</a></li>
+
           </ul>
       </div>
 
