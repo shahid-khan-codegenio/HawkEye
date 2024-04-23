@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import * as AOS from 'aos';
 
 
 @Component({
@@ -7,14 +6,8 @@ import * as AOS from 'aos';
   template: `<router-outlet></router-outlet> `,
 })
 export class AppComponent implements OnInit {
+  title = 'HawkEye';
   ngOnInit(): void {
-    AOS.init({
-      offset: 200,
-      duration: 700,
-      easing: 'ease-in-sine',
-      delay: 100,
-    });
   }
-  title = 'AdminPannel';
 
 }
