@@ -1,27 +1,27 @@
 <section class="header">
             
   <nav class="navbar navbar-expand-lg">
-      <button class="navbar-toggler mt-2" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" (click)="toggleNavbar()">
+      <button class="navbar-toggler mt-2" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" (click)="toggleNavbar()" #toggleNotification>
           <i class="fa-solid fa-bars text-white"></i>
       </button>
     
       <div class="collapse navbar-collapse" id="navbarSupportedContent" [ngClass]="{'show': navbarOpen}">
-          <ul class="navbar-nav mr-auto">
+          <ul class="navbar-nav mr-auto" #notificationMenu>
               <li  class="mr-1"><img src="./assets/logo.png" alt="logo"></li>
              
               <li class="nav-item mr-1">
                 <div class="dropdown">
                     <h4 class="drop-text">About <i class="fa fa-angle-down"></i></h4>
                     <div class="dropdown-content">
-                        <a >Careers</a>
+                        <a (click)="this.navbarOpen=false">Careers</a>
                         <hr style="margin: 0" />
-                        <a >Success Stories</a>
+                        <a (click)="this.navbarOpen=false">Success Stories</a>
                         <hr style="margin: 0" />
-                        <a >Testimonials</a>
+                        <a (click)="this.navbarOpen=false">Testimonials</a>
                         <hr style="margin: 0" />
-                        <a >Earn Rewards with our Referal Program</a>
+                        <a (click)="this.navbarOpen=false">Earn Rewards with our Referal Program</a>
                         <hr style="margin: 0" />
-                        <a >Videos</a>
+                        <a (click)="this.navbarOpen=false">Videos</a>
                     </div>
                 </div>
              </li>
@@ -30,25 +30,25 @@
                 <div class="dropdown">
                     <h4 class="drop-text">Services <i class="fa fa-angle-down"></i></h4>
                     <div class="dropdown-content">
-                        <a >Truck Dispatching</a>
+                        <a (click)="this.navbarOpen=false">Truck Dispatching</a>
                         <hr style="margin: 0" />
-                        <a >Billing</a>
+                        <a (click)="this.navbarOpen=false">Billing</a>
                         <hr style="margin: 0" />
-                        <a >Document Management</a>
+                        <a (click)="this.navbarOpen=false">Document Management</a>
                         <hr style="margin: 0" />
-                        <a >Factoring Service</a>
+                        <a (click)="this.navbarOpen=false">Factoring Service</a>
                         <hr style="margin: 0" />
-                        <a >Rabe Negotiation</a>
+                        <a (click)="this.navbarOpen=false">Rabe Negotiation</a>
                         <hr style="margin: 0" />
-                        <a >Safety & DOT Compliance</a>
+                        <a (click)="this.navbarOpen=false">Safety & DOT Compliance</a>
                         <hr style="margin: 0" />
-                        <a >Trucker Accounting</a>
+                        <a (click)="this.navbarOpen=false">Trucker Accounting</a>
                         <hr style="margin: 0" />
-                        <a >Trucking Invoice Service</a>
+                        <a (click)="this.navbarOpen=false">Trucking Invoice Service</a>
                         <hr style="margin: 0" />
-                        <a >Truck Document Management</a>
+                        <a (click)="this.navbarOpen=false">Truck Document Management</a>
                         <hr style="margin: 0" />
-                        <a >Truck Document Dispabel Service</a>
+                        <a (click)="this.navbarOpen=false">Truck Document Dispabel Service</a>
                     </div>
                 </div>
              </li>
@@ -57,32 +57,32 @@
                 <div class="dropdown">
                     <h4 class="drop-text">Truck Type <i class="fa fa-angle-down"></i></h4>
                     <div class="dropdown-content">
-                        <a >Dry Van</a>
+                        <a (click)="this.navbarOpen=false">Dry Van</a>
                         <hr style="margin: 0" />
-                        <a >Reefer</a>
+                        <a (click)="this.navbarOpen=false">Reefer</a>
                         <hr style="margin: 0" />
-                        <a >Flafbed</a>
+                        <a (click)="this.navbarOpen=false">Flafbed</a>
                         <hr style="margin: 0" />
-                        <a >Step Decle</a>
+                        <a (click)="this.navbarOpen=false">Step Decle</a>
                         <hr style="margin: 0" />
-                        <a >Conesloga</a>
+                        <a (click)="this.navbarOpen=false">Conesloga</a>
                         <hr style="margin: 0" />
-                        <a >Power Only</a>
+                        <a (click)="this.navbarOpen=false">Power Only</a>
                         <hr style="margin: 0" />
-                        <a >Hotshot</a>
+                        <a (click)="this.navbarOpen=false">Hotshot</a>
                         <hr style="margin: 0" />
-                        <a >Box Truck</a>
+                        <a (click)="this.navbarOpen=false">Box Truck</a>
                         <hr style="margin: 0" />
-                        <a >Straiget Truck  </a>
+                        <a (click)="this.navbarOpen=false">Straiget Truck  </a>
                     </div>
                 </div>
              </li>
 
-              <li class="nav-item mr-1">How to start</li>
-              <li class="nav-item mr-1">Shippers</li>
-              <li class="nav-item mr-1">FAQ</li>
-              <li class="nav-item mr-1">Contact us</li>
-              <li ><a href="tel:+1302123456" class="nav-item">(406)-4058608</a></li>
+              <li class="nav-item mr-1" (click)="this.navbarOpen=false">How to start</li>
+              <li class="nav-item mr-1" (click)="this.navbarOpen=false">Shippers</li>
+              <li class="nav-item mr-1" (click)="this.navbarOpen=false">FAQ</li>
+              <li class="nav-item mr-1" (click)="this.navbarOpen=false">Contact us</li>
+              <li ><a href="tel:+1302123456" class="nav-item" (click)="this.navbarOpen=false">(406)-4058608</a></li>
              
           </ul>
       </div>
