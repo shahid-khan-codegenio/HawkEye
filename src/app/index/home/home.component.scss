@@ -367,22 +367,21 @@
                 transition: background 0.3s;
 
                 &:hover {
-                    a {
-                        background: red;
-                        color: #fff;
-                    }
+                    background: red;
+                    color: #fff;
 
-                    svg {
+                    span {
                         opacity: 1;
-                        color: #fff;
                     }
 
                 }
 
-                svg {
-                    width: 15px;
-                    height: 15px;
-                    transition: opacity .3s;
+                span {
+                    opacity: 0;
+                    font-size: 2rem;
+                    font-weight: 700;
+                    margin-left: 1.5rem;
+                    transition: opacity 0.3s;
                 }
             }
         }
