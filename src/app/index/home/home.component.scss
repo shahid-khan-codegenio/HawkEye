@@ -166,9 +166,6 @@
 
 
 
-
-
-
 /* Count section */
 .count-section {
     background-image: url(/assets/count_bg.webp);
@@ -219,22 +216,6 @@
     margin-bottom: 3rem;
     position: relative;
 
-    .heading {
-        h2 {
-            font-weight: 700;
-            font-size: 3rem;
-            margin-bottom: 5rem;
-            color: #000000;
-        }
-
-        a {
-            font-size: 1.5rem;
-            font-weight: 500;
-            margin-bottom: 5rem;
-            color: red;
-        }
-    }
-
     .content {
         padding-right: 2rem;
 
@@ -283,55 +264,54 @@
 
 
 
-
-
-
-
-
-
-
 /* work-with-us section*/
 .work-with-us {
     width: 100%;
     background: #000;
+    position: relative;
 
-    .title h1 {
+    h2 {
+        font-weight: 600;
+        font-size: 3rem;
+        margin-bottom: 5rem;
         color: #fff;
-        font-size: 50px;
-        font-weight: 800;
-        position: relative;
-
-        &::before {
-            content: "";
-            position: absolute;
-            left: 0;
-            top: -20px;
-            width: 70px;
-            height: 6px;
-            background: red;
-            transition: all 0.2s;
-        }
     }
 
     .wrapper {
         margin-top: 80px;
         width: 100%;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        display: flex;
+        flex-wrap: wrap;
         gap: 30px;
 
-        @include max(426px) {
-            grid-template-columns: 3fr !important;
-        }
-
         .box {
-            width: 100%;
+            width: 31%;
             height: 230px;
             background: #fff;
             position: relative;
 
-            &:hover .overlay {
-                opacity: 0;
+            @include max(768px) {
+                width: 30%;
+            }
+
+            @include max(425px) {
+                width: 100%;
+            }
+
+            &:hover {
+                .overlay {
+                    opacity: 0;
+                }
+
+                a {
+                    background: red;
+                    color: #fff;
+
+                    span {
+                        opacity: 1;
+                    }
+                }
+
             }
 
             img {
@@ -364,16 +344,10 @@
                 z-index: 4;
                 background: transparent;
                 display: flex;
-                transition: background 0.3s;
+                transition: ease-in 0.3s;
 
                 &:hover {
-                    background: red;
-                    color: #fff;
-
-                    span {
-                        opacity: 1;
-                    }
-
+                    cursor: pointer;
                 }
 
                 span {
@@ -381,7 +355,6 @@
                     font-size: 2rem;
                     font-weight: 700;
                     margin-left: 1.5rem;
-                    transition: opacity 0.3s;
                 }
             }
         }
@@ -397,43 +370,24 @@
     width: 100%;
     position: relative;
 
-    .title h1 {
-        color: #222;
-        font-size: 50px;
-        font-weight: 800;
-
-        &::before {
-            content: "";
-            position: absolute;
-            left: 0;
-            top: -20px;
-            width: 70px;
-            height: 6px;
-            background: red;
-            transition: all 0.2s;
-        }
-    }
-
     .wrapper {
         width: 100%;
         margin-top: 50px;
         display: flex;
-
-        @include max(426px) {
-            flex-wrap: wrap;
-        }
+        flex-wrap: wrap;
 
         .img {
             width: 40%;
             min-height: 100%;
 
+            @include max(769px) {
+                width: 35%;
+            }
+
             @include max(426px) {
                 width: 100%;
             }
 
-            @include max(769px) {
-                width: 35%;
-            }
 
             img {
                 width: 100%;
@@ -444,11 +398,17 @@
 
         .txt {
             padding: 30px 50px;
-            flex: 1;
             background: #000;
             width: 60%;
             min-height: 100%;
 
+            @include max(769px) {
+                width: 65%;
+            }
+
+            @include max(426px) {
+                width: 100%;
+            }
 
             h1 {
                 font-size: 3.6rem;

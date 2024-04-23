@@ -25,7 +25,7 @@ export class HomeComponent implements OnInit {
     this.workWithUs = [
       { imgSrc: "./assets/work-with-us/img1.webp", text: "Dry Van" },
       { imgSrc: "./assets/work-with-us/img2.jpg", text: "Step Deck" },
-      { imgSrc: "./assets/work-with-us/img3jpg", text: "Reefer" },
+      { imgSrc: "./assets/work-with-us/img3.jpg", text: "Reefer" },
       { imgSrc: "./assets/work-with-us/img4.jpg", text: "Flatbed" },
       { imgSrc: "./assets/work-with-us/img5.jpg", text: "Power Only" },
       { imgSrc: "./assets/work-with-us/img6.jpg", text: "Hotshot" },

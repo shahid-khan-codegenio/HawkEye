@@ -103,6 +103,29 @@ body {
     }
 }
 
+.heading {
+    h2 {
+        font-weight: 700;
+        font-size: 3rem;
+        margin-bottom: 4rem;
+        color: #000000;
+
+        @include max(768px) {
+            margin-bottom: 1rem;
+        }
+    }
+
+    a {
+        font-size: 1.5rem;
+        font-weight: 500;
+        margin-bottom: 5rem;
+        color: red;
+
+        &:hover {
+            opacity: .8;
+        }
+    }
+}
 
 .before::before {
     content: '';
