@@ -4,24 +4,24 @@
       <button class="navbar-toggler mt-2" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" (click)="toggleNavbar()" #toggleNotification>
           <i class="fa-solid fa-bars text-white"></i>
       </button>
-    
+      
       <div class="collapse navbar-collapse" id="navbarSupportedContent" [ngClass]="{'show': navbarOpen}">
           <ul class="navbar-nav mr-auto" #notificationMenu>
               <li  class="mr-1"><img src="./assets/logo.png" alt="logo"></li>
              
               <li class="nav-item mr-1">
                 <div class="dropdown">
-                    <h4 class="drop-text">About <i class="fa fa-angle-down"></i></h4>
+                    <h4 class="drop-text" (click)="this.navbarOpen=false;" href="/about">About <i class="fa fa-angle-down"></i></h4>
                     <div class="dropdown-content">
-                        <a (click)="this.navbarOpen=false">Careers</a>
+                        <a (click)="this.navbarOpen=false" routerLink="careers">Careers</a>
                         <hr style="margin: 0" />
-                        <a (click)="this.navbarOpen=false">Success Stories</a>
+                        <a (click)="this.navbarOpen=false" routerLink="success-stories">Success Stories</a>
                         <hr style="margin: 0" />
-                        <a (click)="this.navbarOpen=false">Testimonials</a>
+                        <a (click)="this.navbarOpen=false" routerLink="testimonials">Testimonials</a>
                         <hr style="margin: 0" />
-                        <a (click)="this.navbarOpen=false">Earn Rewards with our Referal Program</a>
-                        <hr style="margin: 0" />
-                        <a (click)="this.navbarOpen=false">Videos</a>
+                        <a (click)="this.navbarOpen=false" routerLink="earn-reward">Earn Rewards with our Referal Program</a>
+                        <!-- <hr style="margin: 0" />
+                        <a (click)="this.navbarOpen=false">Videos</a> -->
                     </div>
                 </div>
              </li>
@@ -86,5 +86,6 @@
              
           </ul>
       </div>
-  </nav>
+
+    </nav>
 </section>
