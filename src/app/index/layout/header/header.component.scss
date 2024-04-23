@@ -18,14 +18,14 @@
             top: 5px;
             float: right;
             color: #fff;
-        
+
             &.active,
             .nav-item:hover {
                 border-bottom: 1px solid #fff;
                 cursor: pointer;
             }
-        
-            img{
+
+            img {
                 cursor: pointer;
             }
         }
@@ -61,16 +61,16 @@
                 .dropdown {
                     position: relative;
                     display: inline-block;
-                
+
                     &:hover .dropdown-content {
                         display: block;
                     }
 
-                    .drop-text{
+                    .drop-text {
                         font-size: 1rem;
                         margin-bottom: 0;
                     }
-                    
+
                     .dropdown-content {
                         display: none;
                         position: absolute;
@@ -96,7 +96,7 @@
                         }
                     }
                 }
-            
+
             }
         }
     }
