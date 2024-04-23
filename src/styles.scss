@@ -1,12 +1,12 @@
 // Google Font Poppins
 // @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;900&display=swap');
-@import url('/src/assets/variables.scss');
+// @import url('/src/assets/variables.scss');
 
-* {
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    box-sizing: border-box !important;
-}
+// * {
+//     font-family: 'Poppins', sans-serif;
+//     margin: 0;
+//     box-sizing: border-box !important;
+// }
 
 ul {
     padding: 0;
@@ -55,6 +55,10 @@ a {
 
 ul {
     list-style: none;
+}
+
+body {
+    background: #EEF0F3;
 }
 
 .toast-container .ngx-toastr {
@@ -147,14 +151,15 @@ ul {
 
     #navbarSupportedContent {
         color: #fff;
-        background-color: #EEF0F3 ;
+        background-color: #EEF0F3;
         margin-top: 2px;
     }
+
     #navbarSupportedContent ul {
         padding: 12px;
     }
-    
-    #navbarSupportedContent ul li{
+
+    #navbarSupportedContent ul li {
         padding: 8px;
         color: #000;
     }
@@ -162,7 +167,7 @@ ul {
     #navbarSupportedContent ul li a {
         color: #000;
     }
-    
+
     #navbarSupportedContent ul li:hover,
     #navbarSupportedContent ul li a:hover {
         background-color: #fff;
@@ -200,7 +205,7 @@ ul {
     footer .middle-sec {
         width: 100%;
     }
-    
+
     footer .middle-sec .wrapper .logo,
     footer .middle-sec .wrapper .logo img {
         width: 100% !important;
