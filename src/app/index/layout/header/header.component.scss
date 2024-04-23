@@ -11,7 +11,6 @@
     nav {
         position: absolute;
         width: 100%;
-        z-index: 1000000000;
 
         .navbar-toggler {
             background-color: #000;
@@ -75,7 +74,6 @@
                 .dropdown {
                     position: relative;
                     display: inline-block;
-                    z-index: 11111111111111111111;
                     &:hover .dropdown-content {
                         display: block;
                     }
