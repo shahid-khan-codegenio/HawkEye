@@ -16,18 +16,16 @@ import { ToastrService } from 'ngx-toastr';
   </section>
   `,
   styles: [`
-    @import url('/src/assets/variables.scss');
-
     .main {
         min-height: 100vh;
-        background-color: var(--body-color);
+        background-color: "#E4E9F7";
     
         .home {
             position: relative;
             min-height: 100vh;
             left: 260px;
             width: calc(100% - 260px);
-            transition: var(--tran-03);
+            transition: all 0.3s ease;
             
             .content{
               padding: 1rem 2rem;

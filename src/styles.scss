@@ -1,6 +1,5 @@
 // Google Font Poppins
 // @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;900&display=swap');
-// @import url('/src/assets/variables.scss');
 
 // * {
 //     font-family: 'Poppins', sans-serif;
@@ -69,13 +68,13 @@ body {
 
 .toast-container .ngx-toastr {
     top: 50px;
-    background-color: var(--sidebar-color);
-    color: var(--text-color);
+    background-color: "#FFF";
+    color: "#707070";
     border-radius: 10px;
 
     span {
         font-size: 1.5rem;
-        color: var(--text-color);
+        color: "#707070";
     }
 }
 

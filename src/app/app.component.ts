@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-// import * as AOS from 'aos';
+import * as AOS from 'aos';
 
 
 @Component({
@@ -8,12 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AppComponent implements OnInit {
   ngOnInit(): void {
-    // AOS.init({
-    //   offset: 200,
-    //   duration: 700,
-    //   easing: 'ease-in-sine',
-    //   delay: 100,
-    // });
+    AOS.init({
+      offset: 200,
+      duration: 700,
+      easing: 'ease-in-sine',
+      delay: 100,
+    });
   }
   title = 'AdminPannel';
 

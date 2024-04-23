@@ -1,13 +1,10 @@
-@import url('/src/assets/variables.scss');
-
-
 header {
     padding: 1rem;
-    background-color: var(--primary-color);
-    color: var(--text-color);
+    background-color: "#1c128e";
+    color: "#707070";
 
     .toggle {
-        color: var(--primary-color-light);
+        color: "#F6F5FF";
         font-size: 1.5rem;
         cursor: pointer;
         position: relative;
@@ -16,8 +13,8 @@ header {
 
     .right-side {
         display: inline-block;
-        
-        i{
+
+        i {
             color: #fff;
             border: 1px solid #fff;
             border-radius: 10px;
@@ -26,7 +23,7 @@ header {
             cursor: pointer;
             margin-right: 10px;
 
-            &:hover{
+            &:hover {
                 background-color: #8c8c8c;
                 border: 1px solid #494949;
             }
