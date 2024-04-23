@@ -14,7 +14,7 @@
         justify-content: space-evenly;
         flex-wrap: wrap;
         position: absolute;
-        top: 25vh;
+        top: 15vh;
 
         .text .title {
             font-size: 4rem;
@@ -57,8 +57,6 @@
 
 /* Service section */
 .services {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
     position: relative;
 
     h2:nth-child(1) {
@@ -172,8 +170,6 @@
     background-image: url(/assets/count_bg.webp);
     background-repeat: no-repeat;
     background-position: center;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
     margin-bottom: 3rem;
     position: relative;
 
@@ -184,17 +180,22 @@
         color: #fff;
     }
 
-    i {
-        color: green;
-        font-size: 3rem;
-        margin-bottom: 1rem;
+    .wrapper {
+        padding: 0 4rem;
+
+        i {
+            color: green;
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .count-num {
+            font-size: 3rem;
+            font-weight: 600;
+            margin: 0;
+        }
     }
 
-    .count-num {
-        font-size: 3rem;
-        font-weight: 600;
-        margin: 0;
-    }
 
 
 }
@@ -203,8 +204,6 @@
 
 
 .getStart-section {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
     margin-bottom: 3rem;
     position: relative;
 
@@ -283,7 +282,6 @@
 .work-with-us {
     width: 100%;
     background: #000;
-    padding: 4rem 0;
 
     .title h1 {
         color: #fff;
@@ -382,7 +380,6 @@
 /* Testimonial section */
 .testimonials {
     width: 100%;
-    padding: 4rem 0;
     position: relative;
 
     .title h1 {
@@ -408,13 +405,13 @@
         display: flex;
 
         .img {
-            width: 434px;
-            height: 371px;
+            width: 40%;
+            min-height: 100%;
 
             img {
                 width: 100%;
                 height: 100%;
-                object-fit: contain;
+                object-fit: cover;
             }
         }
 
@@ -422,6 +419,9 @@
             padding: 30px 50px;
             flex: 1;
             background: #000;
+            width: 60%;
+            height: 100%;
+
 
             h1 {
                 font-size: 3.6rem;
