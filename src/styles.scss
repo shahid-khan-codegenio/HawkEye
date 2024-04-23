@@ -112,6 +112,10 @@ body {
     height: 5px;
     color: red;
     background-color: red;
+
+    @include max(768px) {
+        top: 25px
+    }
 }
 
 .pad {
@@ -130,113 +134,37 @@ body {
     }
 }
 
+.form {
+    background-color: #fff;
+    padding: 40px 30px;
+    width: 450px;
 
-
-
-
-
-
-
-
-/* Media Query for Small Laptop */
-@media screen and (max-width: 1024px) {
-    .form {
+    @include max(1024px) {
         max-width: 100%;
     }
-}
 
-
-/* Media Query for Tab */
-@media screen and (max-width: 768px) {
-    .hero .content .text .title {
-        font-size: 2.5rem;
+    @include max(768px) {
+        width: 100%;
+        margin-top: 2rem;
     }
 
-    .form {
-        width: 450px;
+
+    &.main-form {
+        @include max(768px) {
+            width: 425px !important;
+        }
+
+        @include max(425px) {
+            display: none;
+        }
     }
 
-    .hero .content {
-        top: 70px;
-    }
-
-    .testimonials .wrapper .img {
-        width: 35%;
-    }
-
-    .header nav .navbar-toggler,
-    #navbarSupportedContent {
-        z-index: 1000;
-    }
-
-    #navbarSupportedContent {
+    .btn.btn-danger {
+        border-color: #ff1414;
+        background-color: #ff1414;
         color: #fff;
-        background-color: #EEF0F3;
-        margin-top: 2px;
+        border-radius: 0%;
+        padding-left: 40px;
+        padding-right: 40px;
     }
-
-    #navbarSupportedContent ul {
-        padding: 12px;
-    }
-
-    #navbarSupportedContent ul li {
-        padding: 8px;
-        color: #000;
-    }
-
-    #navbarSupportedContent ul li a {
-        color: #000;
-    }
-
-    #navbarSupportedContent ul li:hover,
-    #navbarSupportedContent ul li a:hover {
-        background-color: #fff;
-    }
-}
-
-
-/* Media Query for Mobile */
-@media screen and (max-width: 426px) {
-    .form {
-        margin-top: 8rem;
-        max-width: 320pxpx;
-    }
-
-    .services {
-        margin-top: 7rem;
-    }
-
-    .services .service-container .service-card {
-        min-height: 96%;
-    }
-
-    .work-with-us .wrapper {
-        grid-template-columns: 3fr !important;
-    }
-
-    .testimonials .wrapper {
-        flex-wrap: wrap;
-    }
-
-    .testimonials .wrapper .img {
-        width: 100%;
-    }
-
-    footer .middle-sec {
-        width: 100%;
-    }
-
-    footer .middle-sec .wrapper .logo,
-    footer .middle-sec .wrapper .logo img {
-        width: 100% !important;
-    }
-
-    footer .top-sec .title .wrapper-form {
-        width: 100%;
-    }
-
-    footer .middle-sec ul {
-        width: 100%;
-    }
-
 }

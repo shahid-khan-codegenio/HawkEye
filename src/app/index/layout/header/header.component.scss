@@ -101,3 +101,35 @@
         }
     }
 }
+
+@media screen and (max-width: 768px) {
+
+    .header nav .navbar-toggler,
+    #navbarSupportedContent {
+        z-index: 1000;
+    }
+
+    #navbarSupportedContent {
+        color: #fff;
+        background-color: #EEF0F3;
+        margin-top: 2px;
+    }
+
+    #navbarSupportedContent ul {
+        padding: 12px;
+    }
+
+    #navbarSupportedContent ul li {
+        padding: 8px;
+        color: #000;
+    }
+
+    #navbarSupportedContent ul li a {
+        color: #000;
+    }
+
+    #navbarSupportedContent ul li:hover,
+    #navbarSupportedContent ul li a:hover {
+        background-color: #fff;
+    }
+}

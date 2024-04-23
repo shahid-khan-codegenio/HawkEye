@@ -1,3 +1,10 @@
+@mixin max($max-width) {
+    @media screen and (max-width: #{$max-width}) {
+        @content;
+    }
+}
+
+
 /* Hero section */
 .hero {
     min-height: 100vh;
@@ -16,10 +23,18 @@
         position: absolute;
         top: 15vh;
 
+        @include max(769px) {
+            top: 70px;
+        }
+
         .text .title {
-            font-size: 4rem;
-            font-weight: 900;
+            font-size: 5rem;
+            font-weight: 700;
             color: #fff;
+
+            @include max(769px) {
+                font-size: 2.5rem;
+            }
         }
 
         .phone-number {
@@ -30,21 +45,6 @@
     }
 
 
-}
-
-.form {
-    background-color: #fff;
-    padding: 40px 30px;
-    width: 500px;
-
-    .btn.btn-danger {
-        border-color: #ff1414;
-        background-color: #ff1414;
-        color: #fff;
-        border-radius: 0%;
-        padding-left: 40px;
-        padding-right: 40px;
-    }
 }
 
 
@@ -58,6 +58,10 @@
 /* Service section */
 .services {
     position: relative;
+
+    @include max(425px) {
+        margin-top: 7rem;
+    }
 
     h2:nth-child(1) {
         font-weight: 800;
@@ -182,6 +186,14 @@
 
     .wrapper {
         padding: 0 4rem;
+
+        @include max(769px) {
+            padding: 0 2rem;
+        }
+
+        @include max(426px) {
+            padding: 1rem 2rem;
+        }
 
         i {
             color: green;
@@ -308,6 +320,10 @@
         grid-template-columns: 1fr 1fr 1fr;
         gap: 30px;
 
+        @include max(426px) {
+            grid-template-columns: 3fr !important;
+        }
+
         .box {
             width: 100%;
             height: 230px;
@@ -404,9 +420,21 @@
         margin-top: 50px;
         display: flex;
 
+        @include max(426px) {
+            flex-wrap: wrap;
+        }
+
         .img {
             width: 40%;
             min-height: 100%;
+
+            @include max(426px) {
+                width: 100%;
+            }
+
+            @include max(769px) {
+                width: 35%;
+            }
 
             img {
                 width: 100%;
@@ -420,7 +448,7 @@
             flex: 1;
             background: #000;
             width: 60%;
-            height: 100%;
+            min-height: 100%;
 
 
             h1 {

@@ -70,3 +70,23 @@ footer {
         color: #fff;
     }
 }
+
+@media screen and (max-width: 426px) {
+    footer .middle-sec {
+        width: 100%;
+    }
+
+    footer .middle-sec .wrapper .logo,
+    footer .middle-sec .wrapper .logo img {
+        width: 100% !important;
+    }
+
+    footer .top-sec .title .wrapper-form {
+        width: 100%;
+    }
+
+    footer .middle-sec ul {
+        width: 100%;
+    }
+
+}
