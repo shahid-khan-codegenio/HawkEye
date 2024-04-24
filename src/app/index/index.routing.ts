@@ -4,9 +4,9 @@ import { IndexComponent } from './index.component';
 
 const routes: Routes = [
   {
-    path: '', 
+    path: '',
     component: IndexComponent,
-    children:[
+    children: [
       { path: '', loadChildren: () => import('./home/home.module').then(m => m.HomeModule) },
       { path: 'about', loadChildren: () => import('./about/about/about.module').then(m => m.AboutModule) },
       { path: 'careers', loadChildren: () => import('./about/careers/careers.module').then(m => m.CareersModule) },
@@ -17,6 +17,7 @@ const routes: Routes = [
       { path: 'shippers', loadChildren: () => import('./shippers/shippers.module').then(m => m.ShippersModule) },
       { path: 'FAQ', loadChildren: () => import('./FAQ/FAQ.module').then(m => m.FAQModule) },
       { path: 'contact-us', loadChildren: () => import('./contact-us/contact-us.module').then(m => m.ContactUsModule) },
+      { path: 'services', loadChildren: () => import('./services/services.module').then(m => m.ServicesModule) },
 
     ]
   }
