@@ -1,0 +1,65 @@
+@mixin max($max-width) {
+    @media screen and (max-width: #{$max-width}) {
+        @content;
+    }
+}
+
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+
+    .item {
+        width: 47%;
+        display: flex;
+
+        .img {
+            min-height: 100%;
+
+            @include max(426px) {
+                width: 100%;
+            }
+
+
+            img {
+                width: 200px;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .txt {
+            padding: 15px 10px;
+            background: #000;
+            min-height: 100%;
+
+            @include max(769px) {
+                width: 65%;
+            }
+
+            @include max(426px) {
+                width: 100%;
+            }
+
+            h1 {
+                font-size: 3.6rem;
+                color: #fff;
+                margin-bottom: 1.5rem;
+            }
+
+            h3 {
+                font-size: 15px;
+                color: #94a9cb;
+                font-weight: 500;
+                margin-bottom: 3rem;
+            }
+
+            p {
+                font-size: 15px;
+                color: #fff;
+            }
+        }
+    }
+}
