@@ -204,13 +204,32 @@ body {
     }
 }
 
-.banner{
+.banner {
     width: 100%;
     height: 250px;
 
-    img{
+    img {
         width: 100%;
         height: 100%;
         object-fit: cover;
+    }
+}
+
+.breadcrumbs {
+    position: relative;
+
+    h1 {
+        font-size: 4rem;
+        margin-bottom: 4rem;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            width: 120px;
+            height: 5px;
+            color: red;
+            background-color: red;
+        }
     }
 }

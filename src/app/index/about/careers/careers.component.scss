@@ -1,0 +1,49 @@
+@mixin max($max-width) {
+    @media screen and (max-width: #{$max-width}) {
+        @content;
+    }
+}
+
+.driver-wrapper {
+    padding: 3rem 0;
+
+    h2 {
+        position: relative;
+        margin-bottom: 15px;
+
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 120px;
+            height: 5px;
+            color: #000;
+            background-color: #000;
+        }
+    }
+
+    p {
+        width: 50%;
+
+        @include max(768px) {
+            width: 100%;
+        }
+    }
+}
+
+hr {
+    margin-bottom: 3rem;
+}
+
+.content-wrapper {
+
+    h1 {
+        margin-bottom: 3rem;
+        font-size: 3.5rem;
+        line-height: 1.5;
+        font-weight: 700;
+    }
+
+    p {}
+}
