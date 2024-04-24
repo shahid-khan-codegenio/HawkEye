@@ -18,6 +18,7 @@ const routes: Routes = [
       { path: 'FAQ', loadChildren: () => import('./FAQ/FAQ.module').then(m => m.FAQModule) },
       { path: 'contact-us', loadChildren: () => import('./contact-us/contact-us.module').then(m => m.ContactUsModule) },
       { path: 'services', loadChildren: () => import('./services/services.module').then(m => m.ServicesModule) },
+      { path: 'truck-type', loadChildren: () => import('./truck-type/truck-type.module').then(m => m.TruckTypeModule) },
 
     ]
   }
