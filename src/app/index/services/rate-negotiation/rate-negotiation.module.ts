@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RabeNegotiationComponent } from './rabe-negotiation.component';
 import { Routes, RouterModule } from '@angular/router';
+import { RateNegotiationComponent } from './rate-negotiation.component';
 
 const routes: Routes = [
-  { path: '', component: RabeNegotiationComponent }
+  { path: '', component: RateNegotiationComponent }
 ]
 
 @NgModule({
@@ -12,6 +12,6 @@ const routes: Routes = [
     CommonModule,
     RouterModule.forChild(routes)
   ],
-  declarations: [RabeNegotiationComponent]
+  declarations: [RateNegotiationComponent]
 })
-export class RabeNegotiationModule { }
+export class RateNegotiationModule { }

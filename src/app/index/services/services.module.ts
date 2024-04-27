@@ -13,7 +13,7 @@ const routes: Routes = [
       { path: 'billing', loadChildren: () => import('./billing/billing.module').then(m => m.BillingModule) },
       { path: 'document-management', loadChildren: () => import('./document-management/document-management.module').then(m => m.DocumentManagementModule) },
       { path: 'factoring-services', loadChildren: () => import('./factoring-service/factoring-service.module').then(m => m.FactoringServiceModule) },
-      { path: 'rabe-negotiation', loadChildren: () => import('./rabe-negotiation/rabe-negotiation.module').then(m => m.RabeNegotiationModule) },
+      { path: 'rate-negotiation', loadChildren: () => import('./rate-negotiation/rate-negotiation.module').then(m => m.RateNegotiationModule) },
       { path: 'safety', loadChildren: () => import('./safety/safety.module').then(m => m.SafetyModule) },
       { path: 'trucker-accounting', loadChildren: () => import('./trucker-accounting/trucker-accounting.module').then(m => m.TruckerAccountingModule) },
       { path: 'trucking-invoice', loadChildren: () => import('./trucking-invoice/trucking-invoice.module').then(m => m.TruckingInvoiceModule) },
