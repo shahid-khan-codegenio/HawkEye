@@ -154,19 +154,23 @@ body {
 }
 
 .pad {
-    padding: 3rem 15rem;
+    padding: 3rem 10rem;
 
-    @include max(1025px) {
-        padding: 3rem 3rem;
+    @include max(1200px) {
+        padding: 0;
     }
+    
+    // @include max(1025px) {
+    //     padding: 3rem 3rem;
+    // }
 
-    @include max(769px) {
-        padding: 2rem 2rem;
-    }
+    // @include max(769px) {
+    //     padding: 2rem 2rem;
+    // }
 
-    @include max(425px) {
-        padding: 2rem 0;
-    }
+    // @include max(425px) {
+    //     padding: 2rem 0;
+    // }
 }
 
 .form {
