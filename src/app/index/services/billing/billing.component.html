@@ -3,58 +3,20 @@
 </div>
 
 <section class="pad">
-    <div class="breadcrumbs">
-      <h1>Billing</h1>
-    </div>
-
-    <div class="row">
+    <div class="row mb-5">
       <div class="col-md-6 main-points">
-        <div>
-          <i class="fa-solid fa-check text-danger"></i>
-          <span>Invoicing, accounting and billing</span>
-        </div>
-        
-        <div>
-          <i class="fa-solid fa-check text-danger"></i>
-          <span>Personal approach</span>
-        </div>
-        
-        <div>
-          <i class="fa-solid fa-check text-danger"></i>
-          <span>Hands-off process for drivers</span>
-        </div>
+          <div class="breadcrumbs"> <h1>Billing</h1> </div>
+          <div class="item"> <i class="fa-solid fa-check text-danger"></i> <span>Invoicing, accounting and billing</span> </div>
+          <div class="item"> <i class="fa-solid fa-check text-danger"></i> <span>Personal approach</span> </div>
+          <div class="item"> <i class="fa-solid fa-check text-danger"></i> <span>Hands-off process for drivers</span> </div>
       </div>
 
-      <div class="col-md-6">
-        <div class="col-lg-6">
-          <form id="contactForm1" class="form" method="POST">
-              <h3>Contact us for free setup</h3>
-              
-              <label for="full-name" class="mt-2">Full name</label>
-              <input type="text" class="form-control" name="name">
-              
-              <label for="phone-number" class="mt-2">Phone number</label>
-              <input type="number" class="form-control" name="phone">
-      
-              <label for="email" class="mt-2">Email</label>
-              <input type="email" class="form-control" name="email">
-      
-              <div class="mt-2">
-                  <input type="checkbox" id="agreedCheckbox1" name="agreed"><span> I have read and agree to <a href="#">Terms of Service</a></span>
-              </div>
-              <div>
-                  <input type="checkbox" id="notificationCheckbox1" name="wantToReceiveNotifications"><span> I want to receive the most useful tips and news</span>
-              </div>
-              <div class="mt-2">
-                  <button type="submit" class="btn btn-lg btn-danger">Send Request</button>
-              </div>
-          </form>
+      <div class="col-md-6 d-flex justify-content-end">
+        <app-form></app-form>
       </div>
-      </div>
-    </div>
+  </div>
 
-
-    <h3 class="mt-3">Truck Driver Accounting Services</h3>
+    <h3 class="mt-3 mb-3">Truck Driver Accounting Services</h3>
 
     <p>Trucking accounting company to keep you and your truck out there on the road.</p>
     <p>Truck drivers are some our society’s heroes, providing key logistics and delivery services that keep America moving. But, while they are out there on the road, they need to know they have the necessary support and assistance to get the job done the right way, time and time again.</p>
@@ -62,9 +24,8 @@
     <p>Our service also covers billing, so that you can deliver a great experience to your clients and get paid in the right way. All of this contributes to a trucking business or freelance operation that is ready and able to fulfill an important role out on America’s roads.</p>
     <p>Reach out to our team today to discover more or get a quote for our services. Or read on for additional information on what you can expect.</p>
 
-    <h3>Choose Your Truck Type</h3>
-
-    <div class="d-flex justify-content-between flex-wrap">
+    <h3 class="mt-5 mb-3 text-center">Choose Your Truck Type</h3>
+    <div class="d-flex justify-content-between flex-wrap mb-5">
       <div class="turck">Dry Van</div>
       <div class="turck">Step Deck</div>
       <div class="turck">Reefer</div>
@@ -75,126 +36,41 @@
       <div class="turck">Straight Truck</div>
     </div>
 
-    <p></p>
-    <span class="getStart-section pad">
-      <span class="d-flex justify-content-between heading">
-          <h2 class="before"> How to Get Started</h2>        
-          <a href="#" >Read more &nbsp;&nbsp;+</a>
-      </span>
-  
-      <div class="row">
-          <div class="col-lg-6 content">
-              <p>Hawkeye Dispatch's job is to provide the best loads in the market for every driver. Our expert team ensures that drivers from any region and state get high-quality and best-paying loads.</p>
-              <ul class="p-0">
-                  <li><span>01- Fill out the form or call us: +14064058608</span> <span>></span></li>
-                  <li><span>02- Upload your MC Authority, W9 Form, and Certificate of Insurance</span> <span>></span></li>
-                  <li><span>03- Sign the Dispatch Agreement completed by our team</span> <span>></span></li>
-                  <li><span>04- We are all set. Let’s get to work</span> <span>></span></li>
-              </ul>
-          </div>
-          
-          <div class="col-lg-6">
-              <form id="contactForm1" class="form" method="POST">
-                  <h3>Contact us for free setup</h3>
-                  
-                  <label for="full-name" class="mt-2">Full name</label>
-                  <input type="text" class="form-control" name="name">
-                  
-                  <label for="phone-number" class="mt-2">Phone number</label>
-                  <input type="number" class="form-control" name="phone">
-          
-                  <label for="email" class="mt-2">Email</label>
-                  <input type="email" class="form-control" name="email">
-          
-                  <div class="mt-2">
-                      <input type="checkbox" id="agreedCheckbox1" name="agreed"><span> I have read and agree to <a href="#">Terms of Service</a></span>
-                  </div>
-                  <div>
-                      <input type="checkbox" id="notificationCheckbox1" name="wantToReceiveNotifications"><span> I want to receive the most useful tips and news</span>
-                  </div>
-                  <div class="mt-2">
-                      <button type="submit" class="btn btn-lg btn-danger">Send Request</button>
-                  </div>
-              </form>
-          </div>
-      </div>
-    </span>
+    <app-get-start></app-get-start>
 
-    <h3>Trucking Billing and Accounting: What to Expect from Our Services</h3>
+    <h3 class="mt-3">Trucking Billing and Accounting: What to Expect from Our Services</h3>
 
     <p>Many American truckers and owner-operators are already enjoying our expert services. Here’s what you can expect when you work with us:</p>
-    <div>
-      <i class="fa-solid fa-check text-danger"></i>
-      <span>Smooth and reliable trucking accounting services for business</span>
-    </div>
+    <div class="tick"> <i class="fa-solid fa-check text-danger"></i> <span>Smooth and reliable trucking accounting services for business</span> </div>
     
     <p>When done right, accounting can save you money and help your business thrive — and this is exactly the kind of service we provide. We adopt an expert approach, removing all confusion and uncertainty from the process so that your business receives the truck driver accounting services it needs. You end up with a trucking business or freelance operation thatis lean, mean, and flexible enough to compete with the best out there on the road.</p>
-    <div>
-      <i class="fa-solid fa-check text-danger"></i>
-      <span>Trucking billing that supports your business</span>
-    </div>
+    <div class="tick"> <i class="fa-solid fa-check text-danger"></i> <span>Trucking billing that supports your business</span> </div>
     
     <p>You provide your trucking services, and then you get paid. But there is a missing link in the chain here — billing.Billing helps your clients understand how much they are paying for your services while also ensuring that you get paidthe money you are owed. This is a crucial service for all truck drivers, and we are proud to do our part to keep thatall-important revenue flowing in.</p>
-    <div>
-      <i class="fa-solid fa-check text-danger"></i>
-      <span>Trucking invoice for all aspects of your operation</span>
-    </div>
+    <div class="tick"> <i class="fa-solid fa-check text-danger"></i> <span>Trucking invoice for all aspects of your operation</span> </div>
 
     <p>There may be additional services that you provide outside of your standard logistics and delivery work. You may find yourself needing to deliver invoices to your clients in a flexible and reliable manner so that you can foster a strong relationship with your customers while still receiving the money that is due to you. Let us take care of this with our reliable trucking invoicing services.</p>
 
-    <div>
-      <i class="fa-solid fa-check text-danger"></i>
-      <span>A hands-off process for drivers</span>
-    </div>
+    <div class="tick"> <i class="fa-solid fa-check text-danger"></i> <span>A hands-off process for drivers</span> </div>
     <p>We are the accounting, billing, and invoicing professionals. We know this industry, and we are proud to deliver the right kind of service to the drivers who work with us and rely on us. But what does this mean? We take care of everything and ensure that drivers do not need to worry or stress about anything relating to accounting or billing. It’s a completely hands-off process for our drivers.</p>
 
-    <div>
-      <i class="fa-solid fa-check text-danger"></i>
-      <span>A close and personal service</span>
-    </div>
+    <div class="tick"> <i class="fa-solid fa-check text-danger"></i> <span>A close and personal service</span> </div>
 
     <p>We know that freelance truckers and owner-operators have unique needs and expectations. For this reason, we work closely with you to understand exactly what you require, and then put our expertise to good use as we meet and exceed those requirements.</p>
 
     <h3>The Benefits of Our Trucking Accounting Services</h3>
     <p>Why do so many truckers opt to use our accounting services? Here are a few of the benefits we bring to the table:</p>
-    <div>
-      <i class="fa-solid fa-check text-danger"></i>
-      <span>Formidable expertise in accounting specifically for the logistics and haulage industry.</span>
-    </div>
-    
-    <div>
-      <i class="fa-solid fa-check text-danger"></i>
-      <span>The financial foundation that will help your business to grow and expand in the future.</span>
-    </div>
+   
+    <div class="ms-4 mb-4">
+      <div> <i class="fa-solid fa-check text-danger"></i> <span class="ms-2">Formidable expertise in accounting specifically for the logistics and haulage industry.</span> </div>
+      <div> <i class="fa-solid fa-check text-danger"></i> <span class="ms-2">The financial foundation that will help your business to grow and expand in the future.</span> </div>
+      <div> <i class="fa-solid fa-check text-danger"></i> <span class="ms-2">Personnel that you can rely on, and who you know have your best interests at heart.</span> </div>
+      <div> <i class="fa-solid fa-check text-danger"></i> <span class="ms-2">Full compliance with all tax laws and regulations, so that there are no nasty surprises at tax time.</span> </div>
+      <div> <i class="fa-solid fa-check text-danger"></i> <span class="ms-2">Only pay the tax required of you, leaving your business strong and fighting fit.</span> </div>
+      <div> <i class="fa-solid fa-check text-danger"></i> <span class="ms-2">A stress-free process with no input required from you after the initial consultation.</span> </div>
+      <div> <i class="fa-solid fa-check text-danger"></i> <span class="ms-2">A solid set of accounts that will instill trust in your clients</span> </div>
+      <div> <i class="fa-solid fa-check text-danger"></i> <span class="ms-2">Transparent prices that help you to plan your operations with ease and effectiveness.</span> </div>
 
-    <div>
-      <i class="fa-solid fa-check text-danger"></i>
-      <span>Personnel that you can rely on, and who you know have your best interests at heart.</span>
-    </div>
-
-    <div>
-      <i class="fa-solid fa-check text-danger"></i>
-      <span>Full compliance with all tax laws and regulations, so that there are no nasty surprises at tax time.</span>
-    </div>
-
-    <div>
-      <i class="fa-solid fa-check text-danger"></i>
-      <span>Only pay the tax required of you, leaving your business strong and fighting fit.</span>
-    </div>
-
-    <div>
-      <i class="fa-solid fa-check text-danger"></i>
-      <span>A stress-free process with no input required from you after the initial consultation.</span>
-    </div>
-    
-    <div>
-      <i class="fa-solid fa-check text-danger"></i>
-      <span>A solid set of accounts that will instill trust in your clients</span>
-    </div>
-
-    <div>
-      <i class="fa-solid fa-check text-danger"></i>
-      <span>Transparent prices that help you to plan your operations with ease and effectiveness.</span>
     </div>
 
 

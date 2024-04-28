@@ -4,59 +4,21 @@
 </div>
 
 <section class="pad">
-    <div class="breadcrumbs">
-      <h1>Rate Negotiation</h1>
+    <div class="row mb-5">
+        <div class="col-md-6 main-points">
+            <div class="breadcrumbs"> <h1>Rate Negotiation</h1> </div>
+            <div class="item"> <i class="fa-solid fa-check text-danger"></i> <span>The best pay rate on every job</span> </div>
+            <div class="item"> <i class="fa-solid fa-check text-danger"></i> <span>Hands-off process for truckers and owner-operators</span> </div>
+            <div class="item"> <i class="fa-solid fa-check text-danger"></i> <span>Transparent pricing that you can rely on</span> </div>
+        </div>
+
+        <div class="col-md-6 d-flex justify-content-end">
+          <app-form></app-form>
+        </div>
     </div>
 
 
-    <div class="row">
-      <div class="col-md-6 main-points">
-        <div>
-          <i class="fa-solid fa-check text-danger"></i>
-          <span>The best pay rate on every job</span>
-        </div>
-        
-        <div>
-          <i class="fa-solid fa-check text-danger"></i>
-          <span>Hands-off process for truckers and owner-operators</span>
-        </div>
-        
-        <div>
-          <i class="fa-solid fa-check text-danger"></i>
-          <span>Transparent pricing that you can rely on</span>
-        </div>
-      </div>
-
-      <div class="col-md-6">
-        <div class="col-lg-6">
-          <form id="contactForm1" class="form" method="POST">
-              <h3>Contact us for free setup</h3>
-              
-              <label for="full-name" class="mt-2">Full name</label>
-              <input type="text" class="form-control" name="name">
-              
-              <label for="phone-number" class="mt-2">Phone number</label>
-              <input type="number" class="form-control" name="phone">
-      
-              <label for="email" class="mt-2">Email</label>
-              <input type="email" class="form-control" name="email">
-      
-              <div class="mt-2">
-                  <input type="checkbox" id="agreedCheckbox1" name="agreed"><span> I have read and agree to <a href="#">Terms of Service</a></span>
-              </div>
-              <div>
-                  <input type="checkbox" id="notificationCheckbox1" name="wantToReceiveNotifications"><span> I want to receive the most useful tips and news</span>
-              </div>
-              <div class="mt-2">
-                  <button type="submit" class="btn btn-lg btn-danger">Send Request</button>
-              </div>
-          </form>
-      </div>
-      </div>
-    </div>
-
-
-    <h3>Rate Negotiation Services: Get the Best Truck Driver Pay Rate on Every Job</h3>
+    <h3 class="mb-3">Rate Negotiation Services: Get the Best Truck Driver Pay Rate on Every Job</h3>
 
     <p>Negotiating a fair truck driver hourly rate for freelance logistics drivers and truck owner-operators across the country</p>
     <p>The service you provide is so valuable to your clients. Your trucking operation is keeping America moving and keeping our society functioning at its best. This is why you deserve the best rates possible for every trucking and logistics job you take on.</p>
@@ -65,9 +27,8 @@
     <p>Get started today. Reach out to us via phone or email to get a quote for our services or find out more about what we can provide to you and your operation.</p>
 
 
-    <h3>Choose Your Truck Type</h3>
-
-    <div class="d-flex justify-content-between flex-wrap">
+    <h3 class="text-center mt-5">Choose Your Truck Type</h3>
+    <div class="d-flex justify-content-between flex-wrap mb-5">
       <div class="turck">Dry Van</div>
       <div class="turck">Step Deck</div>
       <div class="turck">Reefer</div>
@@ -79,89 +40,28 @@
     </div>
 
 
-    <p></p>
-    <span class="getStart-section pad">
-      <span class="d-flex justify-content-between heading">
-          <h2 class="before"> How to Get Started</h2>        
-          <a href="#" >Read more &nbsp;&nbsp;+</a>
-      </span>
-  
-      <div class="row">
-          <div class="col-lg-6 content">
-              <p>Hawkeye Dispatch's job is to provide the best loads in the market for every driver. Our expert team ensures that drivers from any region and state get high-quality and best-paying loads.</p>
-              <ul class="p-0">
-                  <li><span>01- Fill out the form or call us: +14064058608</span> <span>></span></li>
-                  <li><span>02- Upload your MC Authority, W9 Form, and Certificate of Insurance</span> <span>></span></li>
-                  <li><span>03- Sign the Dispatch Agreement completed by our team</span> <span>></span></li>
-                  <li><span>04- We are all set. Let’s get to work</span> <span>></span></li>
-              </ul>
-          </div>
-          
-          <div class="col-lg-6">
-              <form id="contactForm1" class="form" method="POST">
-                  <h3>Contact us for free setup</h3>
-                  
-                  <label for="full-name" class="mt-2">Full name</label>
-                  <input type="text" class="form-control" name="name">
-                  
-                  <label for="phone-number" class="mt-2">Phone number</label>
-                  <input type="number" class="form-control" name="phone">
-          
-                  <label for="email" class="mt-2">Email</label>
-                  <input type="email" class="form-control" name="email">
-          
-                  <div class="mt-2">
-                      <input type="checkbox" id="agreedCheckbox1" name="agreed"><span> I have read and agree to <a href="#">Terms of Service</a></span>
-                  </div>
-                  <div>
-                      <input type="checkbox" id="notificationCheckbox1" name="wantToReceiveNotifications"><span> I want to receive the most useful tips and news</span>
-                  </div>
-                  <div class="mt-2">
-                      <button type="submit" class="btn btn-lg btn-danger">Send Request</button>
-                  </div>
-              </form>
-          </div>
-      </div>
-    </span>
+    <app-get-start></app-get-start>
 
 
-    <h3>What to expect from our truck rate negotiation services</h3>
+    <h3 class="mt-5 mb-2">What to expect from our truck rate negotiation services</h3>
 
     <p>More and more truck drivers across the US are turning to Hawkeye Freights & Dispatch for rate negotiation and more. Here’s why.</p>
-    <div>
-      <i class="fa-solid fa-check text-danger"></i>
-      <span>A fair rate for you and your clients</span>
-    </div>
+    <div class="tick"> <i class="fa-solid fa-check text-danger"></i> <span >A fair rate for you and your clients</span> </div>
 
     <p>You provide a great service for your clients, and so you deserve to get paid a fair truck rate per mile and per load. You also work to support your clients’ needs, and so you want to offer a competitive rate that keeps your business moving and your customers smiling. We understand this, which is why we apply our expert negotiation skills to get you the best truck driver pay rate for your services.</p>
-    <div>
-      <i class="fa-solid fa-check text-danger"></i>
-      <span>Connection with the ideal opportunities</span>
-    </div>
+    <div class="tick"> <i class="fa-solid fa-check text-danger"></i> <span >Connection with the ideal opportunities</span> </div>
 
     <p>We can search for loads nationwide, which means that you only need to worry about driving while we handle the rest. This translates to a solid revenue stream for your business. You can scale and grow your operation, connecting with the opportunities you need and building lasting relationships with all-important clients.</p>
-    <div>
-      <i class="fa-solid fa-check text-danger"></i>
-      <span>Expert negotiation of terms</span>
-    </div>
+    <div class="tick"> <i class="fa-solid fa-check text-danger"></i> <span >Expert negotiation of terms</span> </div>
 
     <p>Many factors go into crafting the ideal relationship between truckers and clients. There is the pricing, but there are also other terms and conditions that must be discussed and agreed upon. This is where our negotiation expertise comes into play, and it goes way beyond simply organizing a pay rate for truck drivers. You will enjoy opportunities and terms that suit you while also helping your clients achieve their objectives.</p>
-    <div>
-      <i class="fa-solid fa-check text-danger"></i>
-      <span>A hands-off process for truckers and owner-operators</span>
-    </div>
+    <div class="tick"> <i class="fa-solid fa-check text-danger"></i> <span >A hands-off process for truckers and owner-operators</span> </div>
 
     <p>You take care of the driving; we take care of the rest. We apply this motto to all of our services, including our rate negotiation services. Our aim is to secure a great truck driver hourly rate without the stress and anxiety. When you work with us, you know that you are getting the best services, so you can focus on what you do best.</p>
-    <div>
-      <i class="fa-solid fa-check text-danger"></i>
-      <span>A close and personal service, tailored to what you need</span>
-    </div>
+    <div class="tick"> <i class="fa-solid fa-check text-danger"></i> <span >A close and personal service, tailored to what you need</span> </div>
 
     <p>We don’t believe in ‘off the peg’ services or a ‘one size fits all’ approach. We know that the truckers we work with each have specific needs and expectations, which is why we work closely with you to get to know what you and your operation are all about. We can then provide a tailored service that helps you go above and beyond your goals.</p>
-    <div>
-      <i class="fa-solid fa-check text-danger"></i>
-      <span>Transparent pricing that you can rely on</span>
-    </div>
+    <div class="tick"> <i class="fa-solid fa-check text-danger"></i> <span >Transparent pricing that you can rely on</span> </div>
 
     <p>There are no nasty surprises when you work with us. We offer a transparent and reliable pricing system, so you know exactly how much you’ll pay for our services. You can plan your routes and forecast your revenue with complete peace of mind.</p>
     
