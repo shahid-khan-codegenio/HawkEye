@@ -4,63 +4,25 @@
 </div>
 
 <section class="pad">
-    <div class="breadcrumbs">
-      <h1>Document Management</h1>
+  <div class="row mb-5">
+    <div class="col-md-6 main-points">
+        <div class="breadcrumbs"> <h1>Document Management</h1> </div>
+        <div class="item"> <i class="fa-solid fa-check text-danger"></i> <span>Comprehensive coverage</span> </div>
+        <div class="item"> <i class="fa-solid fa-check text-danger"></i> <span>Management of all trucking documents</span> </div>
+        <div class="item"> <i class="fa-solid fa-check text-danger"></i> <span>Years of industry expertise and dedicated</span> </div>
     </div>
 
-    <div class="row">
-      <div class="col-md-6 main-points">
-        <div>
-          <i class="fa-solid fa-check text-danger"></i>
-          <span>Comprehensive coverage</span>
-        </div>
-        
-        <div>
-          <i class="fa-solid fa-check text-danger"></i>
-          <span>Management of all trucking documents</span>
-        </div>
-        
-        <div>
-          <i class="fa-solid fa-check text-danger"></i>
-          <span>Years of industry expertise and dedicated</span>
-        </div>
-      </div>
-
-      <div class="col-md-6">
-        <div class="col-lg-6">
-          <form id="contactForm1" class="form" method="POST">
-              <h3>Contact us for free setup</h3>
-              
-              <label for="full-name" class="mt-2">Full name</label>
-              <input type="text" class="form-control" name="name">
-              
-              <label for="phone-number" class="mt-2">Phone number</label>
-              <input type="number" class="form-control" name="phone">
-      
-              <label for="email" class="mt-2">Email</label>
-              <input type="email" class="form-control" name="email">
-      
-              <div class="mt-2">
-                  <input type="checkbox" id="agreedCheckbox1" name="agreed"><span> I have read and agree to <a href="#">Terms of Service</a></span>
-              </div>
-              <div>
-                  <input type="checkbox" id="notificationCheckbox1" name="wantToReceiveNotifications"><span> I want to receive the most useful tips and news</span>
-              </div>
-              <div class="mt-2">
-                  <button type="submit" class="btn btn-lg btn-danger">Send Request</button>
-              </div>
-          </form>
-      </div>
-      </div>
+    <div class="col-md-6 d-flex justify-content-end">
+      <app-form></app-form>
     </div>
+  </div>
 
     <h3>Document Management </h3>
 
     <p>At Hawkeye Freights & Dispatch, we have always been dedicated to taking good care of our clients in the trucking industry. After all, it is the backbone of the American economy. That’s why we offer an extensive range of solutions for truckers and trucking companies, including dispatch services dedicated to providing you invaluable support – especially with things the industry requires but that take you away from core business activities. For many clients, our trucking document management can be a lifesaver.</p>
     
-    <h3>Choose Your Truck Type</h3>
-
-    <div class="d-flex justify-content-between flex-wrap">
+    <h3 class="mt-5 mb-3 text-center">Choose Your Truck Type</h3>
+    <div class="d-flex justify-content-between flex-wrap mb-5">
       <div class="turck">Dry Van</div>
       <div class="turck">Step Deck</div>
       <div class="turck">Reefer</div>
@@ -72,50 +34,11 @@
     </div>
 
 
-    <p></p>
-    <span class="getStart-section pad">
-      <span class="d-flex justify-content-between heading">
-          <h2 class="before"> How to Get Started</h2>        
-          <a href="#" >Read more &nbsp;&nbsp;+</a>
-      </span>
-  
-      <div class="row">
-          <div class="col-lg-6 content">
-              <p>Hawkeye Dispatch's job is to provide the best loads in the market for every driver. Our expert team ensures that drivers from any region and state get high-quality and best-paying loads.</p>
-              <ul class="p-0">
-                  <li><span>01- Fill out the form or call us: +14064058608</span> <span>></span></li>
-                  <li><span>02- Upload your MC Authority, W9 Form, and Certificate of Insurance</span> <span>></span></li>
-                  <li><span>03- Sign the Dispatch Agreement completed by our team</span> <span>></span></li>
-                  <li><span>04- We are all set. Let’s get to work</span> <span>></span></li>
-              </ul>
-          </div>
-          
-          <div class="col-lg-6">
-              <form id="contactForm1" class="form" method="POST">
-                  <h3>Contact us for free setup</h3>
-                  
-                  <label for="full-name" class="mt-2">Full name</label>
-                  <input type="text" class="form-control" name="name">
-                  
-                  <label for="phone-number" class="mt-2">Phone number</label>
-                  <input type="number" class="form-control" name="phone">
-          
-                  <label for="email" class="mt-2">Email</label>
-                  <input type="email" class="form-control" name="email">
-          
-                  <div class="mt-2">
-                      <input type="checkbox" id="agreedCheckbox1" name="agreed"><span> I have read and agree to <a href="#">Terms of Service</a></span>
-                  </div>
-                  <div>
-                      <input type="checkbox" id="notificationCheckbox1" name="wantToReceiveNotifications"><span> I want to receive the most useful tips and news</span>
-                  </div>
-                  <div class="mt-2">
-                      <button type="submit" class="btn btn-lg btn-danger">Send Request</button>
-                  </div>
-              </form>
-          </div>
-      </div>
-    </span>
+    <app-get-start></app-get-start>
+
+    <div style="width: 100%; height: 350px; margin: 2rem 0;">
+      <img src="assets/sub-pages/img10.jpg" alt="" style="width: 100%; height: 100%;">
+    </div>
 
 
     <h3>Management of Trucking Documents</h3>
@@ -126,6 +49,10 @@
 
     <h3>Expertise and Excellence</h3>
     <p>At Hawkeye Freights & Dispatch, we pride ourselves on our commitment to client care. Part of this is knowing the ins and outs of the trucking industry, which includes industry standards and regulatory requirements. We understand what is required, as well as why it’s required and who needs to see it. When we prepare, file, and manage trucking documentation, we are diligent, accurate, and ensure that everything that needs to be in the paperwork is there. We take your success very seriously – because your success is our success, too.</p>
+
+    <div style="width: 100%; height: 350px; margin: 2rem 0;">
+      <img src="assets/sub-pages/img11.jpg" alt="" style="width: 100%; height: 100%;">
+    </div>
 
     <h3>Our Approach to Document Management</h3>
     <p>Hawkeye Freights & Dispatch provides best-in-class management of trucking documentation by itself or as part of a more comprehensive dispatch service package. That’s because we know that different trucking businesses need different levels of support. Part of our no-nonsense approach to service is working with our clients to provide exactly what they need. We know you know your business better, and we aren’t here to sell you anything you don’t want.</p>
