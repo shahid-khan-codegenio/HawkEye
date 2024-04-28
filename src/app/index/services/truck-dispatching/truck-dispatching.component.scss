@@ -3,34 +3,3 @@
         @content;
     }
 }
-
-
-.main-points{
-    font-weight: 600;
-    font-size: 1.3rem;
-
-    span{
-        margin: 20px 0 20px 6px !important;
-    }
-
-}
-
-.turck{
-    width: 20%;
-    background-color: red;
-    color: white;
-    margin: 15px;
-    text-align: center;
-    padding: 6px 0;
-    @include max(768px) {
-        width: 48%;
-    }
-    @include max(425px) {
-        width: 100%;
-    }
-
-    &:hover{
-        background-color: #000;
-    }
-
-}
