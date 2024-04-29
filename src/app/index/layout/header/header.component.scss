@@ -11,13 +11,13 @@
     nav {
         position: absolute;
         width: 100%;
+        z-index: 999;
 
         .navbar-toggler {
-            background-color: #000;
+            color: transparent;
             border: none;
             outline: none;
             margin-left: auto;
-            margin-right: 15px;
             display: none;
             
             @include max(769px) {
@@ -25,7 +25,7 @@
             }
         }
 
-        #navbarSupportedContent {        
+        #navbarContent {        
             top: 5px;
             float: right;
             color: #fff;
@@ -117,31 +117,32 @@
 @media screen and (max-width: 768px) {
 
     .header nav .navbar-toggler,
-    #navbarSupportedContent {
+    #navbarContent {
         z-index: 1000;
     }
 
-    #navbarSupportedContent {
+    #navbarContent {
         color: #fff;
         background-color: #EEF0F3;
         margin-top: 2px;
     }
 
-    #navbarSupportedContent ul {
+    #navbarContent ul {
         padding: 12px;
     }
 
-    #navbarSupportedContent ul li {
+    #navbarContent ul li {
         padding: 8px;
         color: #000;
     }
 
-    #navbarSupportedContent ul li a {
+    #navbarContent ul li a {
         color: #000;
     }
 
-    #navbarSupportedContent ul li:hover,
-    #navbarSupportedContent ul li a:hover {
+    #navbarContent ul li:hover,
+    #navbarContent ul li a:hover {
         background-color: #fff;
     }
+
 }

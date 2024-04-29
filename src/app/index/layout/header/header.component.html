@@ -1,112 +1,116 @@
 <section class="header">
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a routerLink="/"><img src="./assets/logo.png" alt="logo" style="width: 50px; height: 40px;" class="d-lg-none d-block"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" #toggleNotification>
+                <i class="fa-solid fa-bars text-white"></i>
+            </button>
             
-  <nav class="navbar navbar-expand-lg">
-      <button class="navbar-toggler mt-2" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" (click)="toggleNavbar()" #toggleNotification>
-          <i class="fa-solid fa-bars text-white"></i>
-      </button>
-      
-      <div class="collapse navbar-collapse" id="navbarSupportedContent" [ngClass]="{'show': navbarOpen}">
-          <ul class="navbar-nav mr-auto" #notificationMenu>
-              <li  class="mr-1"><a routerLink=""><img src="./assets/logo.png" alt="logo"></a></li>
-             
-              <li class="nav-item mr-1">
-                <div class="dropdown">
-                    <h4 class="drop-text"><a routerLink="about">About</a><i class="fa fa-angle-down"></i></h4>
-                    <div class="dropdown-content">
-                        <a routerLink="careers">Careers</a>
-                        <hr style="margin: 0" />
+          <div class="collapse navbar-collapse" id="navbarContent" #notificationMenu>
+            <ul class="navbar-nav mr-auto">
+                <li  class="mr-1 d-lg-block d-none"><a routerLink=""><img src="./assets/logo.png" alt="logo"></a></li>
+               
+                <li class="nav-item mr-1">
+                  <div class="dropdown">
+                      <h4 class="drop-text"><a routerLink="about">About</a><i class="fa fa-angle-down"></i></h4>
+                      <div class="dropdown-content">
+                          <a routerLink="careers">Careers</a>
+                          <hr style="margin: 0" />
+  
+                          <a routerLink="success-stories">Success Stories</a>
+                          <hr style="margin: 0" />
+  
+                          <a routerLink="testimonials">Testimonials</a>
+                          <hr style="margin: 0" />
+  
+                          <a routerLink="earn-reward">Earn Rewards with our Referal Program</a>
+                          <!-- <hr style="margin: 0" />
+  
+                          <a >Videos</a> -->
+                      </div>
+                  </div>
+               </li>
+  
+                <li class="nav-item mr-1">
+                  <div class="dropdown">
+                      <h4 class="drop-text">Services <i class="fa fa-angle-down"></i></h4>
+                      <div class="dropdown-content">
+                          <a routerLink="services/truck-dispatching">Truck Dispatching</a>
+                          <hr style="margin: 0" />
+  
+                          <a routerLink="services/billing">Billing</a>
+                          <hr style="margin: 0" />
+  
+                          <a routerLink="services/document-management">Document Management</a>
+                          <hr style="margin: 0" />
+  
+                          <a routerLink="services/factoring-services">Factoring Service</a>
+                          <hr style="margin: 0" />
+  
+                          <a routerLink="services/rate-negotiation">Rate Negotiation</a>
+                          <hr style="margin: 0" />
+  
+                          <a routerLink="services/safety">Safety & DOT Compliance</a>
+                          <hr style="margin: 0" />
+  
+                          <a routerLink="services/trucker-accounting">Trucker Accounting</a>
+                          <hr style="margin: 0" />
+  
+                          <a routerLink="services/trucking-invoice">Trucking Invoice Service</a>
+                          <hr style="margin: 0" />
+  
+                          <a routerLink="services/truck-document">Truck Document Management</a>
+                          <hr style="margin: 0" />
+  
+                          <a routerLink="services/truck-dispatch">Truck Document Dispatch Service</a>
+                      </div>
+                  </div>
+               </li>
+  
+               <li class="nav-item mr-1">
+                  <div class="dropdown">
+                      <h4 class="drop-text" routerLink="truck-type">Truck Type <i class="fa fa-angle-down"></i></h4>
+                      <div class="dropdown-content">
+                          <a routerLink="truck-type/dry-van">Dry Van</a>
+                          <hr style="margin: 0" />
+                          
+                          <a routerLink="truck-type/reefer">Reefer</a>
+                          <hr style="margin: 0" />
+                          
+                          <a routerLink="truck-type/flatbed">Flatbed</a>
+                          <hr style="margin: 0" />
+                          
+                          <a >Step Decle</a>
+                          <hr style="margin: 0" />
+                          
+                          <a >Conesloga</a>
+                          <hr style="margin: 0" />
+                          
+                          <a routerLink="truck-type/power-only">Power Only</a>
+                          <hr style="margin: 0" />
+                          
+                          <a routerLink="truck-type/hotshot">Hotshot</a>
+                          <hr style="margin: 0" />
+                          
+                          <a routerLink="truck-type/box-truck">Box Truck</a>
+                          <hr style="margin: 0" />
+                          
+                          <a routerLink="truck-type/straight-truck">Straight Truck  </a>
+                      </div>
+                  </div>
+               </li>
+  
+                <li class="nav-item mr-1"><a routerLink="how-to-start">How to start</a></li>
+                <li class="nav-item mr-1"><a routerLink="shippers">Shippers</a></li>
+                <li class="nav-item mr-1"><a routerLink="FAQ">FAQ</a></li>
+                <li class="nav-item mr-1"><a routerLink="contact-us">Contact us</a></li>
+                <li class="nav-item mr-1"><a href="tel:+1302123456" class="nav-item" >(406)-4058608</a></li>
+  
+            </ul>
+            
+          </div>
+        </div>
+      </nav>
 
-                        <a routerLink="success-stories">Success Stories</a>
-                        <hr style="margin: 0" />
 
-                        <a routerLink="testimonials">Testimonials</a>
-                        <hr style="margin: 0" />
-
-                        <a routerLink="earn-reward">Earn Rewards with our Referal Program</a>
-                        <!-- <hr style="margin: 0" />
-
-                        <a >Videos</a> -->
-                    </div>
-                </div>
-             </li>
-
-              <li class="nav-item mr-1">
-                <div class="dropdown">
-                    <h4 class="drop-text">Services <i class="fa fa-angle-down"></i></h4>
-                    <div class="dropdown-content">
-                        <a routerLink="services/truck-dispatching">Truck Dispatching</a>
-                        <hr style="margin: 0" />
-
-                        <a routerLink="services/billing">Billing</a>
-                        <hr style="margin: 0" />
-
-                        <a routerLink="services/document-management">Document Management</a>
-                        <hr style="margin: 0" />
-
-                        <a routerLink="services/factoring-services">Factoring Service</a>
-                        <hr style="margin: 0" />
-
-                        <a routerLink="services/rate-negotiation">Rate Negotiation</a>
-                        <hr style="margin: 0" />
-
-                        <a routerLink="services/safety">Safety & DOT Compliance</a>
-                        <hr style="margin: 0" />
-
-                        <a routerLink="services/trucker-accounting">Trucker Accounting</a>
-                        <hr style="margin: 0" />
-
-                        <a routerLink="services/trucking-invoice">Trucking Invoice Service</a>
-                        <hr style="margin: 0" />
-
-                        <a routerLink="services/truck-document">Truck Document Management</a>
-                        <hr style="margin: 0" />
-
-                        <a routerLink="services/truck-dispatch">Truck Document Dispatch Service</a>
-                    </div>
-                </div>
-             </li>
-
-             <li class="nav-item mr-1">
-                <div class="dropdown">
-                    <h4 class="drop-text" routerLink="truck-type">Truck Type <i class="fa fa-angle-down"></i></h4>
-                    <div class="dropdown-content">
-                        <a routerLink="truck-type/dry-van">Dry Van</a>
-                        <hr style="margin: 0" />
-                        
-                        <a routerLink="truck-type/reefer">Reefer</a>
-                        <hr style="margin: 0" />
-                        
-                        <a routerLink="truck-type/flatbed">Flatbed</a>
-                        <hr style="margin: 0" />
-                        
-                        <a >Step Decle</a>
-                        <hr style="margin: 0" />
-                        
-                        <a >Conesloga</a>
-                        <hr style="margin: 0" />
-                        
-                        <a routerLink="truck-type/power-only">Power Only</a>
-                        <hr style="margin: 0" />
-                        
-                        <a routerLink="truck-type/hotshot">Hotshot</a>
-                        <hr style="margin: 0" />
-                        
-                        <a routerLink="truck-type/box-truck">Box Truck</a>
-                        <hr style="margin: 0" />
-                        
-                        <a routerLink="truck-type/straight-truck">Straight Truck  </a>
-                    </div>
-                </div>
-             </li>
-
-              <li class="nav-item mr-1"><a routerLink="how-to-start">How to start</a></li>
-              <li class="nav-item mr-1"><a routerLink="shippers">Shippers</a></li>
-              <li class="nav-item mr-1"><a routerLink="FAQ">FAQ</a></li>
-              <li class="nav-item mr-1"><a routerLink="contact-us">Contact us</a></li>
-              <li class="nav-item mr-1"><a href="tel:+1302123456" class="nav-item" >(406)-4058608</a></li>
-
-          </ul>
-      </div>
-
-    </nav>
 </section>
