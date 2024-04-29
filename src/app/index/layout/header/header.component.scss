@@ -86,7 +86,7 @@
                     .dropdown-content {
                         display: none;
                         position: absolute;
-                        background-color: #828282;
+                        background-color: #d2e8fd;
                         min-width: 280px;
                         box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.1);
                         z-index: 1;
@@ -123,8 +123,9 @@
 
     #navbarContent {
         color: #fff;
-        background-color: #EEF0F3;
+        background-color: #e3f1ff;
         margin-top: 2px;
+
     }
 
     #navbarContent ul {
@@ -142,7 +143,7 @@
 
     #navbarContent ul li:hover,
     #navbarContent ul li a:hover {
-        background-color: #fff;
+        background-color: #cecece;
     }
 
 }
