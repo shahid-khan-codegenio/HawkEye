@@ -4,65 +4,26 @@
 </div>
 
 <section class="pad">
-    <div class="breadcrumbs">
-      <h1>Truck Invoice</h1>
-    </div>
-
-    <div class="row">
+    <div class="row mb-5">
       <div class="col-md-6 main-points">
-        <div>
-          <i class="fa-solid fa-check text-danger"></i>
-          <span>Invoicing, accounting and billing</span>
-        </div>
-        
-        <div>
-          <i class="fa-solid fa-check text-danger"></i>
-          <span>Invoicing, accounting and billing</span>
-        </div>
-        
-        <div>
-          <i class="fa-solid fa-check text-danger"></i>
-          <span>Personal approach</span>
-        </div>
+          <div class="breadcrumbs"> <h1>Truck Invoice</h1> </div>
+          <div class="item"> <i class="fa-solid fa-check text-danger"></i> <span>Invoicing, accounting and billing</span> </div>
+          <div class="item"> <i class="fa-solid fa-check text-danger"></i> <span>Personal approach</span> </div>
+          <div class="item"> <i class="fa-solid fa-check text-danger"></i> <span>Hands-off process for drivers</span> </div>
       </div>
 
-      <div class="col-md-6">
-        <div class="col-lg-6">
-          <form id="contactForm1" class="form" method="POST">
-              <h3>Contact us for free setup</h3>
-              
-              <label for="full-name" class="mt-2">Full name</label>
-              <input type="text" class="form-control" name="name">
-              
-              <label for="phone-number" class="mt-2">Phone number</label>
-              <input type="number" class="form-control" name="phone">
-      
-              <label for="email" class="mt-2">Email</label>
-              <input type="email" class="form-control" name="email">
-      
-              <div class="mt-2">
-                  <input type="checkbox" id="agreedCheckbox1" name="agreed"><span> I have read and agree to <a href="#">Terms of Service</a></span>
-              </div>
-              <div>
-                  <input type="checkbox" id="notificationCheckbox1" name="wantToReceiveNotifications"><span> I want to receive the most useful tips and news</span>
-              </div>
-              <div class="mt-2">
-                  <button type="submit" class="btn btn-lg btn-danger">Send Request</button>
-              </div>
-          </form>
-      </div>
+      <div class="col-md-6 d-flex justify-content-end">
+        <app-form></app-form>
       </div>
     </div>
-
 
     <h3 class="mt-3">Trucking Invoice Services</h3>
     <p>Your trucking services offer great advantages to your clients. They have specific needs related to the transportation and delivery of goods, and you have the skills and equipment required to fulfill those needs. But you need to be supported too – you need the steady stream of revenue that keeps you on the road and your business growing.</p>
     <p>This is where trucking invoices are so important. You complete your service, bill your customer, and receive your payment. It should be as simple as that.</p>
     <p>But, invoices for trucking companies are a little more complex than this. Here at Hawkeye Freights & Dispatch, our invoicing services are designed to keep you and your business moving forward while keeping your clients happy at the same time.</p>
     
-    <h3>Choose Your Truck Type</h3>
-
-    <div class="d-flex justify-content-between flex-wrap">
+    <h3 class="mt-5 mb-3 text-center">Choose Your Truck Type</h3>
+    <div class="d-flex justify-content-between flex-wrap mb-5">
       <div class="turck">Dry Van</div>
       <div class="turck">Step Deck</div>
       <div class="turck">Reefer</div>
@@ -73,109 +34,44 @@
       <div class="turck">Straight Truck</div>
     </div>
 
-    <p></p>
-    <span class="getStart-section pad">
-      <span class="d-flex justify-content-between heading">
-          <h2 class="before"> How to Get Started</h2>        
-          <a href="#" >Read more &nbsp;&nbsp;+</a>
-      </span>
-  
-      <div class="row">
-          <div class="col-lg-6 content">
-              <p>Hawkeye Dispatch's job is to provide the best loads in the market for every driver. Our expert team ensures that drivers from any region and state get high-quality and best-paying loads.</p>
-              <ul class="p-0">
-                  <li><span>01- Fill out the form or call us: +14064058608</span> <span>></span></li>
-                  <li><span>02- Upload your MC Authority, W9 Form, and Certificate of Insurance</span> <span>></span></li>
-                  <li><span>03- Sign the Dispatch Agreement completed by our team</span> <span>></span></li>
-                  <li><span>04- We are all set. Let’s get to work</span> <span>></span></li>
-              </ul>
-          </div>
-          
-          <div class="col-lg-6">
-              <form id="contactForm1" class="form" method="POST">
-                  <h3>Contact us for free setup</h3>
-                  
-                  <label for="full-name" class="mt-2">Full name</label>
-                  <input type="text" class="form-control" name="name">
-                  
-                  <label for="phone-number" class="mt-2">Phone number</label>
-                  <input type="number" class="form-control" name="phone">
-          
-                  <label for="email" class="mt-2">Email</label>
-                  <input type="email" class="form-control" name="email">
-          
-                  <div class="mt-2">
-                      <input type="checkbox" id="agreedCheckbox1" name="agreed"><span> I have read and agree to <a href="#">Terms of Service</a></span>
-                  </div>
-                  <div>
-                      <input type="checkbox" id="notificationCheckbox1" name="wantToReceiveNotifications"><span> I want to receive the most useful tips and news</span>
-                  </div>
-                  <div class="mt-2">
-                      <button type="submit" class="btn btn-lg btn-danger">Send Request</button>
-                  </div>
-              </form>
-          </div>
-      </div>
-    </span>
+    <app-get-start></app-get-start>
+
+    <div style="width: 100%; height: 550px; margin: 2rem 0;" class="d-flex justify-content-center">
+      <img src="assets/sub-pages/img1.jpg" alt="" style="width: 60%; height: 550px;">
+    </div>
+
 
 
 
     <h3>Hawkeye Freights & Dispatch Invoicing Services for Trucking Companies</h3>
     <p>Hawkeye Freights & Dispatch’s services are designed with trucking companies in mind. We understand how important it is to receive prompt and reliable payment for the services you provide, as this is what keeps your company going. We also recognize how vital it is to have strong relationships with your clients, so we deliver our services with this in mind too. These services include the following key aspects:</p>
-    <div>
-      <i class="fa-solid fa-check text-danger"></i>
-      <span>Reliable Billing</span>
-    </div>
+    <div class="tick"> <i class="fa-solid fa-check text-danger"></i> <span>Reliable Billing</span> </div>
 
     <p>Hawkeye Freights & Dispatch handles invoicing for you, offering reliable bills to your trucking clients to ensure all your work is properly accounted for. This forms the basis of your revenue stream and helps you achieve the funds you need to grow your business. With a solid invoicing strategy and a good stream of revenue, you will find it much easier to plan for future growth.</p>
-    <div>
-      <i class="fa-solid fa-check text-danger"></i>
-      <span>Ongoing Management</span>
-    </div>
+    <div class="tick"> <i class="fa-solid fa-check text-danger"></i> <span>Ongoing Management</span> </div>
 
     <p>Unfortunately, bills are not always paid on time. Invoice management services help you follow up on unpaid bills and invoices, taking the stress out of management. This also helps you recoup money owed for trucking services sooner rather than later while maintaining a positive relationship with clients.</p>
-    <div>
-      <i class="fa-solid fa-check text-danger"></i>
-      <span>Flexible Services that Meet Client Needs</span>
-    </div>
+    <div class="tick"> <i class="fa-solid fa-check text-danger"></i> <span>Flexible Services that Meet Client Needs</span> </div>
 
     <p>Different clients will have different requirements when it comes to invoicing. For your more long-term clients, you may need to break out of your regular trucking company invoice schedule and provide something a little more flexible. This can be difficult to achieve when you are concentrating on driving and logistics, which is why Hawkeye Freights & Dispatch handles this for you. Foster strong connections between your business and your clients without the additional hassle.</p>
-    <div>
-      <i class="fa-solid fa-check text-danger"></i>
-      <span>Tax Planning for Your Business</span>
-    </div>
+    <div class="tick"> <i class="fa-solid fa-check text-danger"></i> <span>Tax Planning for Your Business</span> </div>
 
     <p>Going it alone as a truck driver or trucking company owner-operator means bearing the tax burden that comes with this. Invoicing is a big part of this, and it is this that will form the basis of your tax strategy. However, you didn’t get into truck driving because of your love of tax planning and invoicing. So, let the expert team at Hawkeye Freights & Dispatch handle all of this for you.</p>
-    <div>
-      <i class="fa-solid fa-check text-danger"></i>
-      <span>Integration with Other Hawkeye Freights &Dispatch Services</span>
-    </div>
+    <div class="tick"> <i class="fa-solid fa-check text-danger"></i> <span>Integration with Other Hawkeye Freights &Dispatch Services</span> </div>
     <p>The team here at Hawkeye Freights &Dispatch are experts in the trucking industry, and we have comprehensive experience giving the best solutions to our clients. Our solutions exist both as standalone services – for example, if you simply need some help with your invoicing – and as integrated components of a wider array of offerings. If you need a more complete set of services, including trucking invoice services, we can provide this to you. This way, you can focus on doing what you do best.</p>
 
     <h3>Choosing Hawkeye Freights & Dispatch as Your Trucking Company Invoice Service Providers</h3>
     <p>Increasing numbers of drivers are turning to Hawkeye Freights & Dispatch for trucking invoice services. Here are a few reasons why:</p>
-    <div>
-      <i class="fa-solid fa-check text-danger"></i>
-      <span>Expertise and Experience in the Industry</span>
-    </div>
+    <div class="tick"> <i class="fa-solid fa-check text-danger"></i> <span>Expertise and Experience in the Industry</span> </div>
 
     <p>The team at Hawkeye Freights & Dispatch has years of experience and long-standing expertise in the trucking industry. This means you can rely on us as your truck invoicing partner. Working with industry experts gives you the peace of mind you need to keep on providing the very best for your clients – we are proud to be those experts.</p>
-    <div>
-      <i class="fa-solid fa-check text-danger"></i>
-      <span>Tried-and-Tested Solutions</span>
-    </div>
+    <div class="tick"> <i class="fa-solid fa-check text-danger"></i> <span>Tried-and-Tested Solutions</span> </div>
 
     <p>We listen to our trucking customers, and we work to research and discover which solutions work best for them. We then use this insight to craft invoicing services that are perfectly suited to truck drivers and owner-operators in the field. The result is a set of tried-and-tested services that go above and beyond the needs of our customers.</p>
-    <div>
-      <i class="fa-solid fa-check text-danger"></i>
-      <span>A Close, Personal Approach</span>
-    </div>
+    <div class="tick"> <i class="fa-solid fa-check text-danger"></i> <span>A Close, Personal Approach</span> </div>
 
     <p>We don’t just provide these tried-and-tested trucking services on an off-the-peg basis. We also take the time to get to know you, your clients, and the specific approaches you need to achieve success. This helps us to be flexible in the solutions we offer.</p>
-    <div>
-      <i class="fa-solid fa-check text-danger"></i>
-      <span>A Hands-free Solution for You </span>
-    </div>
+    <div class="tick"> <i class="fa-solid fa-check text-danger"></i> <span>A Hands-free Solution for You </span> </div>
 
     <p>Everything we provide to drivers is intended to make life and work easier and more effective. Chasing up unpaid bills and handling a flexible invoicing strategy detract from the services you provide to your trucking clients. This is why we work hard to take the stress out of running your business.</p>
     
