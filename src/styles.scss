@@ -6,6 +6,7 @@
     margin: 0;
     box-sizing: border-box !important;
 }
+
 @mixin max($max-width) {
     @media screen and (max-width: #{$max-width}) {
         @content;
@@ -223,46 +224,66 @@ body {
 }
 
 
-.main-points{
+.main-points {
     font-weight: 600;
     font-size: 1.3rem;
 
-    .item{
+    .item {
         margin: 20px 0 20px 6px !important;
         font-size: 1.5rem;
 
-        i{
+        i {
             margin-right: 6px;
         }
     }
 
 }
 
-.turck{
+.turck {
     width: 20%;
     background-color: red;
     color: white;
     margin: 15px;
     text-align: center;
     padding: 6px 0;
+
     @include max(768px) {
         width: 48%;
     }
+
     @include max(425px) {
         width: 100%;
     }
 
-    &:hover{
+    &:hover {
         background-color: #000;
     }
 
 }
 
 
-.tick{
-    margin: 2rem 1rem ;
+.tick {
+    margin: 2rem 1rem;
 
-    i{
+    i {
         margin-right: 8px;
     }
+}
+
+
+.faq {
+    i.fa-plus {
+        font-size: 1.5rem;
+        cursor: pointer;
+        color: red;
+        font-weight: 900;
+    }
+
+    i.fa-minus {
+        font-size: 1.5rem;
+        cursor: pointer;
+        color: black;
+        font-weight: 900;
+    }
+
 }
