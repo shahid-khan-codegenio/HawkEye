@@ -12,6 +12,8 @@
         position: absolute;
         width: 100%;
         z-index: 999;
+        padding: 0;
+        background-color: #00000094;
 
         .navbar-toggler {
             color: transparent;
@@ -19,13 +21,13 @@
             outline: none;
             margin-left: auto;
             display: none;
-            
+
             @include max(769px) {
-            display: inline-block;
+                display: inline-block;
             }
         }
 
-        #navbarContent {        
+        #navbarContent {
             top: 5px;
             float: right;
             color: #fff;
@@ -39,8 +41,8 @@
             img {
                 cursor: pointer;
             }
-            
-            
+
+
         }
 
         ul {
@@ -74,6 +76,7 @@
                 .dropdown {
                     position: relative;
                     display: inline-block;
+
                     &:hover .dropdown-content {
                         display: block;
                     }
