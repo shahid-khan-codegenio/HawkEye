@@ -3,11 +3,11 @@
       <video src="/assets/hero-video.mp4" [autoplay]="true" [loop]="true" [muted]="true" playsinline [preload]="true"></video>
       
       <div class="content pad">
-            <div class="text">
+            <div class="text" data-aos="zoom-in">
                 <p class="title">Freight <br>Dispatch <br> Service</p>
                 <a href="tel:+1302123456" class="phone-number btn">(406)-4058608</a>
             </div>
-            <form id="contactForm" class="form main-form">
+            <form id="contactForm" class="form main-form" data-aos="zoom-in">
                 <h3>Contact us for free setup</h3>
                 
                 <label for="full-name" class="mt-2">Full name</label>
@@ -38,13 +38,13 @@
 
 <section class="services pad">
     <span class="d-flex justify-content-between heading">
-        <h2 class="before">Services <br/> and pricing</h2>        
-        <a href="#" >From 5% <br/> of gross</a>
+        <h2 class="before" data-aos="fade-right">Services <br/> and pricing</h2>        
+        <a href="#" data-aos="fade-left">From 5% <br/> of gross</a>
     </span>
 
     <div class="row service-container" >
         <div class="col-sm-6" *ngFor="let item of services">
-            <div class="service-card">
+            <div class="service-card" data-aos="slide-up">
                 <span class="wrapper">
                     <p class="service-count">{{item.count}}</p>
                     <span class="text" [innerHTML]="item.innerText"></span>
@@ -63,21 +63,21 @@
 
 <section class="count-section pad">
     <span class="heading">
-        <h2 class="before"> To work <br/> not talk</h2>        
+        <h2 class="before" data-aos="fade-right"> To work <br/> not talk</h2>        
     </span>
 
     <div class="d-flex justify-content-center flex-wrap">
-        <div class="wrapper text-white">
+        <div class="wrapper text-white" data-aos="slide-up">
             <i class="fa-solid fa-car"></i>
             <p class="count-num">$5000+</p>
             <p class="count-text">Loads Booked</p>
         </div>
-        <div class="wrapper text-white">
+        <div class="wrapper text-white" data-aos="slide-up">
             <i class="fa-solid fa-house"></i>
             <p class="count-num">$5000+</p>
             <p class="count-text">Average Gross Revenue</p>
         </div>
-        <div class="wrapper text-white">
+        <div class="wrapper text-white" data-aos="slide-up">
             <i class="fa-solid fa-book"></i>
             <p class="count-num">$5000+</p>
             <p class="count-text">Mln Lbs Dispatched</p>
@@ -89,12 +89,12 @@
 
 <section class="getStart-section pad">
     <span class="d-flex justify-content-between heading">
-        <h2 class="before"> How to Get Started</h2>        
-        <a href="#" >Read more &nbsp;&nbsp;+</a>
+        <h2 class="before" data-aos="fade-right"> How to Get Started</h2>        
+        <a href="#" data-aos="fade-left">Read more &nbsp;&nbsp;+</a>
     </span>
 
     <div class="row">
-        <div class="col-lg-6 content">
+        <div class="col-lg-6 content" data-aos="fade-right">
             <p>Hawkeye Dispatch's job is to provide the best loads in the market for every driver. Our expert team ensures that drivers from any region and state get high-quality and best-paying loads.</p>
             <ul class="p-0">
                 <li><span>01- Fill out the form or call us: +14064058608</span> <span>></span></li>
@@ -104,7 +104,7 @@
             </ul>
         </div>
         
-        <div class="col-lg-6">
+        <div class="col-lg-6" data-aos="fade-left">
             <form id="contactForm1" class="form" method="POST">
                 <h3>Contact us for free setup</h3>
                 
@@ -135,11 +135,11 @@
 
 <section class="work-with-us pad">
     <span class="heading">
-        <h2 class="before"> Who can <br> work with us</h2>
+        <h2 class="before" data-aos="fade-right"> Who can <br> work with us</h2>
     </span>
 
     <div class="wrapper">
-        <div class="box" *ngFor="let item of workWithUs">
+        <div class="box" *ngFor="let item of workWithUs" data-aos="slide-up">
             <img [src]="item.imgSrc" [alt]="item.text">
             <div class="overlay"></div>
             <a>{{item.text}} <span>></span> </a>
@@ -152,16 +152,16 @@
 
 <section class="testimonials pad">
     <span class="d-flex justify-content-between heading">
-        <h2 class="before">Testimonials</h2>        
-        <a href="#" >Testimonials &nbsp;&nbsp;+</a>
+        <h2 class="before" data-aos="fade-right">Testimonials</h2>        
+        <a href="#" data-aos="fade-left">Testimonials &nbsp;&nbsp;+</a>
     </span>
 
 
     <div class="wrapper">
-        <div class="img">
+        <div class="img" data-aos="fade-right">
             <img src="assets/testimonials.webp" alt="">
         </div>
-        <div class="txt">
+        <div class="txt" data-aos="fade-left">
             <h1>Jay Sanders</h1>
             <h3>MC # 104970</h3>
             <p>Place my trucking business in Logity Dispatch's hands and haven't needed another dispatcher since.

@@ -53,6 +53,7 @@ ul {
 
 body {
     background: #EEF0F3;
+    overflow-x: hidden;
 }
 
 .toast-container .ngx-toastr {
@@ -127,19 +128,12 @@ body {
 .before::before {
     content: '';
     position: absolute;
-    top: 35px;
-    width: 60px;
+    top: -5px;
+    width: 70px;
     height: 5px;
     color: red;
     background-color: red;
 
-    @include max(768px) {
-        top: 25px
-    }
-
-    @include max(768px) {
-        top: 25px
-    }
 }
 
 .pad {
