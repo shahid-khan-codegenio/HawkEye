@@ -7,6 +7,8 @@ import { AdminPannelService } from './admin-pannel/admin-pannel.service';
 import { formValidation } from './helper/form-validation';
 import { ToastrModule } from 'ngx-toastr';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HttpClientModule, HTTP_INTERCEPTORS, } from "@angular/common/http";
+import { Interceptor } from './helper/intercepter';
 
 @NgModule({
   declarations: [
@@ -16,6 +18,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     BrowserModule,
     BrowserAnimationsModule,
     AppRouting,
+    HttpClientModule,
     ToastrModule.forRoot({
       timeOut: 2500,
       positionClass: 'toast-top-right',
@@ -26,7 +29,11 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
       maxOpened: 5
     })
   ],
-  providers: [AdminPannelService, formValidation],
+  providers: [
+    AdminPannelService,
+    formValidation,
+    { provide: HTTP_INTERCEPTORS, useClass: Interceptor, multi: true },
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
