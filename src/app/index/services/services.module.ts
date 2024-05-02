@@ -8,7 +8,6 @@ const routes: Routes = [
     path: '',
     component: ServicesComponent,
     children: [
-      { path: '', loadChildren: () => import('./home/home.module').then(m => m.HomeModule) },
       { path: 'truck-dispatching', loadChildren: () => import('./truck-dispatching/truck-dispatching.module').then(m => m.TruckDispatchingModule) },
       { path: 'billing', loadChildren: () => import('./billing/billing.module').then(m => m.BillingModule) },
       { path: 'document-management', loadChildren: () => import('./document-management/document-management.module').then(m => m.DocumentManagementModule) },

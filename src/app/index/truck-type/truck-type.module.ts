@@ -8,12 +8,10 @@ const routes: Routes = [
     path: '',
     component: TruckTypeComponent,
     children: [
-      { path: '', loadChildren: () => import('./home/home.module').then(m => m.HomeModule) },
       { path: 'dry-van', loadChildren: () => import('./dry-van/dry-van.module').then(m => m.DryVanModule) },
       { path: 'reefer', loadChildren: () => import('./reefer/reefer.module').then(m => m.ReeferModule) },
       { path: 'flatbed', loadChildren: () => import('./flatbed/flatbed.module').then(m => m.FlatbedModule) },
       { path: 'step-deck', loadChildren: () => import('./step-deck/step-deck.module').then(m => m.StepDeckModule) },
-      // { path: '', loadChildren: () => import('./home/home.module').then(m => m.HomeModule) },
       { path: 'power-only', loadChildren: () => import('./power-only/power-only.module').then(m => m.PowerOnlyModule) },
       { path: 'box-truck', loadChildren: () => import('./box-truck/box-truck.module').then(m => m.BoxTruckModule) },
       { path: 'hotshot', loadChildren: () => import('./hotshot/hotshot.module').then(m => m.HotshotModule) },
