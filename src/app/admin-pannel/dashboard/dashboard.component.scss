@@ -1,0 +1,48 @@
+@mixin max($max-width) {
+    @media screen and (max-width: #{$max-width}) {
+        @content;
+    }
+}
+
+
+.wrapper{
+    min-height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .card{
+        width: 200px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+
+        &:nth-child(1){
+            margin-right: 5rem;
+            
+            @include max(425px){
+                margin-right: 5px;
+            }
+        }
+
+        h3{
+            padding: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: gray;
+            font-size: 3rem;
+            text-align: center;
+            font-weight: 700;
+        }
+
+        .footer{
+            background-color: green;
+            color: white;
+            font-size: 1.5rem;
+            padding: 1rem;
+            font-weight: 600;
+        }
+
+    }
+
+}
