@@ -32,7 +32,7 @@ export class FormComponent implements OnInit {
     }
     let data = this.contactForm.getRawValue()
 
-    this.ds.saveForm(data).subscribe(res => {
+    this.ds.saveQueries(data).subscribe(res => {
       if (res) {
         console.log(res)
         this.toastr.success('Message sent successfully', 'Success');

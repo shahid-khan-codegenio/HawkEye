@@ -3,13 +3,42 @@ section{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    position: relative;
+
+    video {
+        width: 100%;
+        height: 100vh !important;
+        object-fit: cover;
+    }
     
     form{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
         display: flex;
         flex-direction: column;
         background-color: #fff;
         padding: 2rem;
         border-radius: 20px;
         min-width: 425px;
+
+        .button {
+            display: flex;
+            justify-content: center;
+
+            button {
+                margin-top: 16px;
+                background: #1c128e;
+                color: #DDD;
+                display: inline-block;
+                display: flex;
+                justify-content: center;
+            }
+        }
+
+        .error {
+            color: red;
+        }
     }
 }

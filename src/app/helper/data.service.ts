@@ -1,11 +1,12 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { environment } from 'src/environments/environment.prod';
 
 @Injectable({
   providedIn: 'root'
 })
 export class DataService {
-  baseUrl = 'https://jsonplaceholder.typicode.com';
+  baseUrl = environment.baseUrl;
   constructor(private http: HttpClient) { }
 
   login(data: any) {
@@ -16,11 +17,15 @@ export class DataService {
     return this.http.post(this.baseUrl + '/change-password', data);
   }
 
-  saveForm(data: any) {
+  saveQueries(data: any) {
     return this.http.post(this.baseUrl + '/contact-us', data);
   }
 
-  getFormData() {
+  getQueries() {
     return this.http.get(this.baseUrl + '/contact-us');
+  }
+
+  getSubscribers(){
+    return this.http.get(this.baseUrl + '/subscribers');
   }
 }

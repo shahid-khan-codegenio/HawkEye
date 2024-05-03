@@ -1,15 +1,36 @@
 
 
 <section>
+  <video src="/assets/hero-video.mp4" [autoplay]="true" [loop]="true" [muted]="true" playsinline [preload]="true"></video>
+
   <div class="row">
     <div class="col-12">
-      <form action="">
+      <form #f="ngForm" [formGroup]="loginForm" (ngSubmit)="onSubmit(loginForm)">
         <h1 class="text-center">Login</h1> 
-        <label for="">Email</label>
-        <input type="text" class="form-control">
-        <label for="">Password</label>
-        <input type="text" class="form-control">
+        
+        <label>Enter Email <span class="error">*</span></label>
+        <input type="email" class="form-control" formControlName="email">
+        <div *ngIf="validator.checkErrors(g['email'], f)" class="error">
+          <p *ngIf="g['email'].errors?.['required']">Email is required.</p>
+          <p *ngIf="g['email'].errors?.['email']">Email is invalid.</p>
+        </div>
+
+        <label class="mt-2">Enter Password <span class="error">*</span></label>
+        <input type="passwrod" class="form-control" formControlName="passwrod">
+        <div *ngIf="validator.checkErrors(g['passwrod'], f)" class="error">
+          <p *ngIf="g['passwrod'].errors?.['required']">Password is required.</p>
+        </div>
+        
+  
+        <div class="button">
+            <button class="btn" type="submit" [disabled]="loading">
+              <i class='bx bx-send' style="margin-top: 2px; margin-right: 2px; transform: rotate(-25deg);"></i>
+              Submit 
+              <div class="loader" *ngIf="loading"></div> 
+            </button>
+        </div>
       </form>
+      
     </div>
   </div>
 </section>
