@@ -8,13 +8,13 @@
       <p *ngIf="g['name'].errors?.['required']">Name is required.</p>
     </div>
     
-    <label>Phone number <span class="error">*</span></label>
+    <label class="mt-2">Phone number <span class="error">*</span></label>
     <input type="number" class="form-control" formControlName="phone" [ngClass]="{ 'form-submitted': f.submitted }" >
     <div *ngIf="validator.checkErrors(g['phone'], f)" class="error">
       <p *ngIf="g['phone'].errors?.['required']">Phone Number is required.</p>
     </div>
     
-    <label>Enter Email <span class="error">*</span></label>
+    <label class="mt-2">Enter Email <span class="error">*</span></label>
     <input type="email" class="form-control" formControlName="email">
     <div *ngIf="validator.checkErrors(g['email'], f)" class="error">
       <p *ngIf="g['email'].errors?.['required']">Email is required.</p>

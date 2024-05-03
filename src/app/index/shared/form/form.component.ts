@@ -31,7 +31,7 @@ export class FormComponent implements OnInit {
       return
     }
     let data = this.contactForm.getRawValue()
-
+    
     this.ds.saveQueries(data).subscribe(res => {
       if (res) {
         console.log(res)

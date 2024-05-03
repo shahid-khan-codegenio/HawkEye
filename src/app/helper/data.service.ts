@@ -10,7 +10,7 @@ export class DataService {
   constructor(private http: HttpClient) { }
 
   login(data: any) {
-    return this.http.post(this.baseUrl + '/login', data);
+    return this.http.post(this.baseUrl + '/public/login', data);
   }
 
   changePassword(data: any) {
@@ -18,14 +18,22 @@ export class DataService {
   }
 
   saveQueries(data: any) {
-    return this.http.post(this.baseUrl + '/contact-us', data);
+    return this.http.post(this.baseUrl + '/public/contact-us/add', data);
+  }
+  
+  getQueries() {
+    return this.http.get(this.baseUrl + '/public/contact-us');
   }
 
-  getQueries() {
-    return this.http.get(this.baseUrl + '/contact-us');
+  saveSubscribers(data: any) {
+    return this.http.post(this.baseUrl + '/public/news-letter/add', data);
   }
 
   getSubscribers(){
-    return this.http.get(this.baseUrl + '/subscribers');
+    return this.http.get(this.baseUrl + '/public/news-letter');
+  }
+
+  getCount(){
+    return this.http.get(this.baseUrl + '/count');
   }
 }

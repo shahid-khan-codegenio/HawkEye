@@ -26,27 +26,6 @@ a {
     text-decoration: none;
 }
 
-::-webkit-scrollbar {
-    width: 8px;
-}
-
-::-webkit-scrollbar-track {
-    background: #f1f1f1;
-}
-
-::-webkit-scrollbar-thumb {
-    background: rgba(139, 226, 255, 0.644);
-    border-radius: 5px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: rgba(108, 201, 232, 0.671);
-}
-
-a {
-    text-decoration: none;
-}
-
 ul {
     list-style: none;
 }
@@ -191,7 +170,6 @@ body {
     }
 }
 
-
 .main-points {
     font-weight: 600;
     font-size: 1.3rem;
@@ -200,6 +178,8 @@ body {
         margin: 20px 0 20px 6px !important;
         font-size: 1.6rem;
         line-height: 3;
+        font-family: "Logity Expanded", sans-serif;
+
 
         i {
             margin-right: 6px;
@@ -231,7 +211,6 @@ body {
 
 }
 
-
 .tick {
     margin: 2rem 1rem;
 
@@ -239,7 +218,6 @@ body {
         margin-right: 8px;
     }
 }
-
 
 .faq {
     i.fa-plus {
@@ -284,4 +262,4 @@ body {
 
 .error p {
     color: red;
-}
+}   
