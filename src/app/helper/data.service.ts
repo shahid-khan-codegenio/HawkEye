@@ -14,26 +14,26 @@ export class DataService {
   }
 
   changePassword(data: any) {
-    return this.http.post(this.baseUrl + '/change-password', data);
+    return this.http.post(this.baseUrl + '/admin/profile/change-password', data);
   }
 
-  saveQueries(data: any) {
+  saveContactUs(data: any) {
     return this.http.post(this.baseUrl + '/public/contact-us/add', data);
   }
   
-  getQueries() {
-    return this.http.get(this.baseUrl + '/public/contact-us');
+  getContactUs() {
+    return this.http.get(this.baseUrl + '/admin/contact-us/list');
   }
 
   saveSubscribers(data: any) {
-    return this.http.post(this.baseUrl + '/public/news-letter/add', data);
+    return this.http.post(this.baseUrl + '/public/subscriber/add', data);
   }
 
   getSubscribers(){
-    return this.http.get(this.baseUrl + '/public/news-letter');
+    return this.http.get(this.baseUrl + '/admin/subscriber/list');
   }
 
   getCount(){
-    return this.http.get(this.baseUrl + '/count');
+    return this.http.get(this.baseUrl + '/admin/subscriber/count');
   }
 }

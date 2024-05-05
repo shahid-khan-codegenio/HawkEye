@@ -19,7 +19,7 @@ export class QueriesComponent implements OnInit {
 
   getSubscriber(){
     this.loader = true;
-    this.api.getQueries().subscribe((res:any)=>{
+    this.api.getContactUs().subscribe((res:any)=>{
       if(res.success){
         this.queries = res.data;
         this.loader = false;

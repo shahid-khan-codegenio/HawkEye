@@ -38,7 +38,7 @@ export class LoginComponent implements OnInit {
     let data = this.loginForm.getRawValue();
     this.api.login(data).subscribe((res:any)=>{
       if(res.success){
-        localStorage.setItem('token',res.token)
+        localStorage.setItem('token',res.data.token)
         this.loading = false;
         this.router.navigate(['/admin']);
       }else{
@@ -46,7 +46,6 @@ export class LoginComponent implements OnInit {
         this.loginError= true;
       }
     })
-      // this.loginForm.reset();
   }
 
 
