@@ -7,29 +7,8 @@
                 <p class="title">Freight <br>Dispatch <br> Service</p>
                 <a href="tel:+1302123456" class="phone-number btn">(406)-4058608</a>
             </div>
-            <form id="contactForm" class="form main-form" data-aos="zoom-in">
-                <h3>Contact us for free setup</h3>
-                
-                <label for="full-name" class="mt-2">Full name</label>
-                <input type="text" class="form-control" name="name">
-                
-                <label for="phone-number" class="mt-2">Phone number</label>
-                <input type="number" class="form-control" name="phone">
-        
-                <label for="email" class="mt-2">Email</label>
-                <input type="email" class="form-control" name="email">
-        
-                <div class="mt-2">
-                    <input type="checkbox" id="agreedCheckbox" name="agreed"><span> I have read and agree to <a href="#">Terms of Service</a></span>
-                </div>
-                <div>
-                    <input type="checkbox" id="notificationCheckbox" name="wantToReceiveNotifications"><span> I want to receive the most useful tips and news</span>
-                </div>
-                <div class="mt-2">
-                    <button type="submit" class="btn btn-lg btn-danger">Send Request</button>
-                </div>
-            </form>
-      </div>
+            <app-form class="main-form"></app-form>
+       </div>
   </div>
 
 </section>
@@ -105,28 +84,7 @@
         </div>
         
         <div class="col-lg-6" data-aos="fade-left">
-            <form id="contactForm1" class="form" method="POST">
-                <h3>Contact us for free setup</h3>
-                
-                <label for="full-name" class="mt-2">Full name</label>
-                <input type="text" class="form-control" name="name">
-                
-                <label for="phone-number" class="mt-2">Phone number</label>
-                <input type="number" class="form-control" name="phone">
-        
-                <label for="email" class="mt-2">Email</label>
-                <input type="email" class="form-control" name="email">
-        
-                <div class="mt-2">
-                    <input type="checkbox" id="agreedCheckbox1" name="agreed"><span> I have read and agree to <a href="#">Terms of Service</a></span>
-                </div>
-                <div>
-                    <input type="checkbox" id="notificationCheckbox1" name="wantToReceiveNotifications"><span> I want to receive the most useful tips and news</span>
-                </div>
-                <div class="mt-2">
-                    <button type="submit" class="btn btn-lg btn-danger">Send Request</button>
-                </div>
-            </form>
+            <app-form></app-form>
         </div>
     </div>
 </section>

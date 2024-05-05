@@ -121,17 +121,6 @@ body {
         margin-top: 2rem;
     }
 
-
-    &.main-form {
-        @include max(768px) {
-            width: 425px !important;
-        }
-
-        @include max(425px) {
-            display: none;
-        }
-    }
-
     .btn.btn-danger {
         border-color: #ff1414;
         background-color: #ff1414;
@@ -139,6 +128,16 @@ body {
         border-radius: 0%;
         padding-left: 40px;
         padding-right: 40px;
+    }
+}
+
+.main-form {
+    @include max(768px) {
+        width: 425px !important;
+    }
+
+    @include max(425px) {
+        display: none;
     }
 }
 
