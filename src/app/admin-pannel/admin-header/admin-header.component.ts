@@ -22,14 +22,13 @@ export class AdminHeaderComponent implements OnInit {
   ngOnInit() {
     this.sidebar = document.querySelector('.sidebar');
     this.home = document.querySelector('.home');
-    this.body = document.querySelector('body');
 
     let windowWidth = window.innerWidth;
     if (windowWidth <= 768) {
       this.sidebar?.classList.add('close');
       this.home?.classList.add('close');
     }
-
+    
   }
 
   toggleSidebar() {
@@ -42,6 +41,10 @@ export class AdminHeaderComponent implements OnInit {
       this.home?.classList.add('close');
       this.sidebar_state = false;
     }
+  }
+
+  logout(){
+    localStorage.removeItem('token');
   }
 
 }

@@ -38,6 +38,8 @@ body {
 .toast-container .ngx-toastr {
     top: 50px;
     border-radius: 10px;
+    position: absolute;
+    z-index: 111;
 
     span {
         font-size: 1.5rem;
@@ -263,15 +265,3 @@ body {
 .error p {
     color: red;
 }   
-
-.loader{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    
-    img{
-        width: 90px;
-        height: 90px;
-    }
-}

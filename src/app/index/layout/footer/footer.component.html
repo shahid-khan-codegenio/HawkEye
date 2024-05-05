@@ -3,8 +3,8 @@
         <div class="title">
             <h3>The most useful articles, tips, and analysis for truckers. Twice a month.</h3>
             <form id="newLetterForm" class="wrapper-form">
-                <input type="text" placeholder="Email Address" name="email">
-                <button type="submit">Subscribe</button>
+                <input type="text" placeholder="Email Address" name="email" [(ngModel)]="email">
+                <button type="submit" [disabled]="loader" (click)="subscribe()">Subscribe <div class="loader1" *ngIf="loader"></div> </button>
             </form>
         </div>
     </div>
