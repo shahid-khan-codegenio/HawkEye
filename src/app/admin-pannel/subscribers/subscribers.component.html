@@ -1,3 +1,6 @@
-<p>
-  subscribers works!
-</p>
+<div class="wrapper" *ngIf="!loader">
+  <div class="card" *ngFor="let item of subscribers; let i = index">
+    <span>({{i+1}})</span>
+    <strong class="ms-2">{{item.email}}</strong>
+  </div>
+</div>

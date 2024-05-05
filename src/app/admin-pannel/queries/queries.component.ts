@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { DataService } from 'src/app/helper/data.service';
+import { LoaderOptionsObject } from '../amin-shared/loader.interface';
 
 @Component({
   selector: 'app-queries',
@@ -7,7 +8,14 @@ import { DataService } from 'src/app/helper/data.service';
   styleUrls: ['./queries.component.scss']
 })
 export class QueriesComponent implements OnInit {
-
+  loaderOptions: LoaderOptionsObject = {
+    rows: 5,
+    cols: 5,
+    colSpans: {
+      0: 1
+    }
+  }
+  dataFetching = true;
   queries: any = [];
   loader = false;
 
