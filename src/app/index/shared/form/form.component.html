@@ -1,7 +1,6 @@
 <form id="contactForm1" class="form" #f="ngForm" [formGroup]="contactForm" (ngSubmit)="onSubmit()">
     <h3>Contact us for free setup</h3>
 
-
     <label>Full Name <span class="error">*</span></label>
     <input type="text" class="form-control" formControlName="name" [ngClass]="{ 'form-submitted': f.submitted }" >
     <div *ngIf="validator.checkErrors(g['name'], f)" class="error">
@@ -22,13 +21,10 @@
     </div>
     
     <div class="mt-2">
-        <input type="checkbox" id="agreedCheckbox1" formControlName="terms"><span> I have read and agree to Terms of Service</span>
+        <input type="checkbox" id="agreedCheckbox1" formControlName="agreed"><span> I have read and agree to Terms of Service</span>
     </div>
-    <div>
-        <input type="checkbox" id="notificationCheckbox1" formControlName="notifications"><span> I want to receive the most useful tips and news</span>
-    </div>
-    <div *ngIf="validator.checkErrors(g['terms'], f) || validator.checkErrors(g['notifications'], f)" class="error">
-      <p>You Should Check both of them.</p>
+    <div class="mt-1">
+        <input type="checkbox" id="notificationCheckbox1" formControlName="wantToReceiveNotifications"><span> I want to receive the most useful tips and news</span>
     </div>
 
 

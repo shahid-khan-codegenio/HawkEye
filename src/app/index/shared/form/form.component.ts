@@ -18,8 +18,8 @@ export class FormComponent implements OnInit {
       name: new FormControl(null, [Validators.required]),
       email: new FormControl(null, [Validators.required, Validators.email]),
       phone: new FormControl(null, [Validators.required]),
-      terms: new FormControl(null, [Validators.required]),
-      notifications: new FormControl(null, [Validators.required]),
+      agreed: new FormControl(),
+      wantToReceiveNotifications: new FormControl(),
     })
   }
 
@@ -27,16 +27,21 @@ export class FormComponent implements OnInit {
   }
 
   onSubmit() {
-    if (!this.contactForm.invalid) {
+    if (this.contactForm.invalid) {
       return
     }
     let data = this.contactForm.getRawValue()
-    
-    this.ds.saveSubscribers(data).subscribe(res => {
-      if (res) {
-        console.log(res)
-        this.toastr.success('Message sent successfully', 'Success');
+    data.phone = data.phone.toString()
+    data.agreed= data.agreed==1?1:0
+    data.wantToReceiveNotifications= data.wantToReceiveNotifications==1?1:0
+    this.loading = true;
+    this.ds.saveContactUs(data).subscribe((res: any) => {
+      if (res.success) {
+        this.toastr.success('Form submitted successfully', 'Success');
+      } else {
+        this.toastr.error(res.error.general, 'Error');
       }
+      this.loading = false;
     })
   }
 
