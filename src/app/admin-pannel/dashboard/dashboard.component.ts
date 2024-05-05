@@ -7,7 +7,8 @@ import { DataService } from 'src/app/helper/data.service';
   styleUrls: ['./dashboard.component.scss']
 })
 export class DashboardComponent implements OnInit {
-  counts: any
+  counts: any;
+  loader = true;
 
   constructor(private api: DataService) {
   }
@@ -17,8 +18,10 @@ export class DashboardComponent implements OnInit {
   }
 
   getCount(){
+    this.loader = true;
     this.api.getCount().subscribe((res: any) => {
       if(res.success){
+        this.loader = false;
         this.counts = res.data;
       }
     })

@@ -1,11 +1,13 @@
 <div class="wrapper">
     <div class="card">
-        <h3>{{counts.subscribers}}</h3>
+        <div class="image" *ngIf="loader"> <img src="assets/loaderx.gif" alt=""> </div>
+        <h3 *ngIf="!loader">{{counts.subscribers}}</h3>
         <div class="footer"> Subscribers </div>
     </div>
 
     <div class="card">
-        <h3>{{counts.queries}}</h3>
+        <div class="image" *ngIf="loader"> <img src="assets/loaderx.gif" alt=""> </div>
+        <h3 *ngIf="!loader">{{counts.queries}}</h3>
         <div class="footer"> Queries </div>
     </div>
 </div>

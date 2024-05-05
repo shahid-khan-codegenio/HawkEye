@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-admin-pannel',
@@ -41,10 +40,9 @@ import { ToastrService } from 'ngx-toastr';
 })
 export class AdminPannelComponent implements OnInit {
 
-  constructor(private toastr: ToastrService) { }
+  constructor() { }
 
   ngOnInit() {
-    this.toastr.success('Welcome to Admin Pannel', 'Success');
   }
 
 }

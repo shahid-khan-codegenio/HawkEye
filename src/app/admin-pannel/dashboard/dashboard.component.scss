@@ -24,6 +24,19 @@
             }
         }
 
+        .image{
+            display: flex;
+            justify-content: center;
+            height: 150px;
+            
+            img{
+                margin-top: 20px;
+                width: 100px;
+                height: 100px;
+            }
+        }
+
+
         h3{
             padding: 50px;
             display: flex;

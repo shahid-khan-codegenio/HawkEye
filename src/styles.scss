@@ -263,3 +263,15 @@ body {
 .error p {
     color: red;
 }   
+
+.loader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    
+    img{
+        width: 90px;
+        height: 90px;
+    }
+}
