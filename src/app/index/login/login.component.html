@@ -16,11 +16,14 @@
         </div>
 
         <label class="mt-2">Enter Password <span class="error">*</span></label>
-        <input type="passwrod" class="form-control" formControlName="passwrod">
-        <div *ngIf="validator.checkErrors(g['passwrod'], f)" class="error">
-          <p *ngIf="g['passwrod'].errors?.['required']">Password is required.</p>
+        <input type="password" class="form-control" formControlName="password">
+        <div *ngIf="validator.checkErrors(g['password'], f)" class="error">
+          <p *ngIf="g['password'].errors?.['required']">Password is required.</p>
         </div>
         
+        <div class="error" *ngIf="loginError">
+          <p>Invalid Email or Password</p>
+        </div>
   
         <div class="button">
             <button class="btn" type="submit" [disabled]="loading">

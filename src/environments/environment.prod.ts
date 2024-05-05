@@ -1,6 +1,6 @@
 export const environment = {
   production: true,
-  baseUrl: "http://web.codewithshahid.tech/api/",
+  baseUrl: "https://apii.codewithshahid.tech/api",
 };
 
 
