@@ -118,6 +118,17 @@
     }
 }
 
+.active {
+    border-bottom: 1px solid #fff;
+    cursor: pointer;
+}
+
+.active2 {
+    background-color: rgb(255, 255, 255);
+    color: #000 !important;
+    cursor: pointer;
+}
+
 @media screen and (max-width: 768px) {
 
     .header nav .navbar-toggler,
