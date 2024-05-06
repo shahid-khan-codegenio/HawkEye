@@ -5,7 +5,7 @@ import { AuthGuard } from '../helper/auth.guard';
 
 const routes: Routes = [
   {
-    path: '', 
+    path: '',
     component: AdminPannelComponent,
     canActivate: [AuthGuard],
 
