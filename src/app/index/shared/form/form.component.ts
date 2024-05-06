@@ -7,7 +7,6 @@ import { formValidation } from 'src/app/helper/form-validation';
 @Component({
   selector: 'app-form',
   templateUrl: './form.component.html',
-  styleUrls: ['./form.component.scss']
 })
 export class FormComponent implements OnInit {
   contactForm!: FormGroup;
@@ -32,8 +31,8 @@ export class FormComponent implements OnInit {
     }
     let data = this.contactForm.getRawValue()
     data.phone = data.phone.toString()
-    data.agreed= data.agreed==1?1:0
-    data.wantToReceiveNotifications= data.wantToReceiveNotifications==1?1:0
+    data.agreed = data.agreed == 1 ? 1 : 0
+    data.wantToReceiveNotifications = data.wantToReceiveNotifications == 1 ? 1 : 0
     this.loading = true;
     this.ds.saveContactUs(data).subscribe((res: any) => {
       if (res.success) {

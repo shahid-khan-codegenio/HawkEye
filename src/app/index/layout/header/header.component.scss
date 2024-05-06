@@ -126,8 +126,8 @@
     }
 
     #navbarContent {
-        color: #fff;
-        background-color: #e3f1ff;
+        color: #fff !important;
+        background-color: #000000;
         margin-top: 2px;
 
     }
@@ -138,16 +138,30 @@
 
     #navbarContent ul li {
         padding: 8px;
-        color: #000;
+        color: #ffffff;
     }
 
     #navbarContent ul li a {
-        color: #000;
+        color: #ffffff;
     }
 
     #navbarContent ul li:hover,
     #navbarContent ul li a:hover {
         background-color: #cecece;
+    }
+
+    .dropdown:hover .dropdown-content {
+        margin-top: 10px;
+        border: 2px solid #ffffff;
+        border-radius: 0 0 5px 5px;
+        margin-left: 120px;
+    }
+
+}
+
+@media screen and (max-width: 426px) {
+    .dropdown:hover .dropdown-content {
+        margin-left: 0;
     }
 
 }

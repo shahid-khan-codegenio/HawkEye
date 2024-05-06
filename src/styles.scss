@@ -107,40 +107,6 @@ body {
     }
 }
 
-.form {
-    background-color: #fff;
-    padding: 40px 30px;
-    width: 450px;
-
-    @include max(1024px) {
-        max-width: 100%;
-    }
-
-    @include max(768px) {
-        width: 100%;
-        margin-top: 2rem;
-    }
-
-    .btn.btn-danger {
-        border-color: #ff1414;
-        background-color: #ff1414;
-        color: #fff;
-        border-radius: 0%;
-        padding-left: 40px;
-        padding-right: 40px;
-    }
-}
-
-.main-form {
-    @include max(768px) {
-        width: 425px !important;
-    }
-
-    @include max(425px) {
-        display: none !important;
-    }
-}
-
 .banner {
     width: 100%;
     height: 250px;
@@ -162,7 +128,7 @@ body {
         &::before {
             content: '';
             position: absolute;
-            top: 0;
+            top: -5px;
             width: 120px;
             height: 5px;
             color: red;
@@ -175,12 +141,22 @@ body {
     font-weight: 600;
     font-size: 1.3rem;
 
+    h1 {
+        @include max(769px) {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+        }
+    }
+
     .item {
         margin: 20px 0 20px 6px !important;
         font-size: 1.6rem;
         line-height: 3;
         font-family: "Logity Expanded", sans-serif;
 
+        @include max(769px) {
+            font-size: 1rem;
+        }
 
         i {
             margin-right: 6px;
@@ -199,7 +175,7 @@ body {
     cursor: pointer;
 
     @include max(768px) {
-        width: 48%;
+        width: 45%;
     }
 
     @include max(425px) {
@@ -214,6 +190,10 @@ body {
 
 .tick {
     margin: 2rem 1rem;
+
+    @include max(425px) {
+        margin: 1rem 0.5rem;
+    }
 
     i {
         margin-right: 8px;
@@ -247,7 +227,7 @@ body {
     cursor: pointer;
 
     @include max(768px) {
-        width: 48%;
+        width: 45%;
     }
 
     @include max(425px) {
@@ -263,4 +243,4 @@ body {
 
 .error p {
     color: red;
-}   
+}
