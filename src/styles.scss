@@ -35,18 +35,6 @@ body {
     overflow-x: hidden;
 }
 
-.toast-container .ngx-toastr {
-    top: 50px;
-    border-radius: 10px;
-    position: absolute;
-    z-index: 111;
-
-    span {
-        font-size: 1.5rem;
-        color: "#707070";
-    }
-}
-
 .heading {
     .before {
         font-weight: 700;

@@ -15,17 +15,17 @@ export class FooterComponent implements OnInit {
   ngOnInit() {
   }
 
-  subscribe(){
+  subscribe() {
     this.loader = true;
-    if(this.email == '') return;
-    if(this.email.match(/^\s*$/) || this.email == null) return;
-    this.api.saveSubscribers({email: this.email}).subscribe((res:any)=>{
-      if(res.success){
-        this.loader = false;
+    if (this.email == '') return;
+    if (this.email.match(/^\s*$/) || this.email == null) return;
+    this.api.saveSubscribers({ email: this.email }).subscribe((res: any) => {
+      window.scrollTo(0, 0);
+      this.loader = false;
+      if (res.success) {
         this.toastr.success("Successfully Subscribed", 'Success');
         this.email = '';
-      }else{
-        this.loader = false;
+      } else {
         this.toastr.error(res.error.general, 'Error');
       }
     })

@@ -20,8 +20,6 @@ import { Interceptor } from './helper/intercepter';
     HttpClientModule,
     ToastrModule.forRoot({
       timeOut: 2500,
-      positionClass: 'toast-top-right',
-      preventDuplicates: true,
       progressBar: true,
       closeButton: true,
       progressAnimation: 'decreasing',
